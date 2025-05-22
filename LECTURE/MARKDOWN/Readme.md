@@ -1,4 +1,5 @@
 REF : https://gist.github.com/ihoneymon/652be052a0727ad59601
+일부 내용 추가,수정
 -----
 # 1. 마크다운에 관하여
 ## 1.1. 마크다운이란?
@@ -55,12 +56,28 @@ REF : https://gist.github.com/ihoneymon/652be052a0727ad59601
 ###### This is a H6
 ####### This is a H7(지원하지 않음)
 
-## 2.2. BlockQuote
+## 2.2. 줄바꿈
+3칸 이상 띄어쓰기(` `)를 하면 줄이 바뀐다.
+
+```
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 
+이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
+이렇게
+```
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.    \
+이렇게
+
+## 2.3. BlockQuote
 이메일에서 사용하는 ```>``` 블럭인용문자를 이용한다.
 ```
 > This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
+>> This is a second blockqute.
+>>> This is a third blockqute.
 ```
 > This is a first blockqute.
 >	> This is a second blockqute.
@@ -73,7 +90,7 @@ REF : https://gist.github.com/ihoneymon/652be052a0727ad59601
 >	code
 >	```
 
-## 2.3. 목록
+## 2.4. 목록
 ### ● 순서있는 목록(번호)
 순서있는 목록은 숫자와 점을 사용한다.
 ```
@@ -137,10 +154,10 @@ REF : https://gist.github.com/ihoneymon/652be052a0727ad59601
     + 3단계
       + 4단계
 
-## 2.4. 코드
+## 2.5. 코드
 4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
 
-### 2.4.1. 들여쓰기
+### 2.5.1. 들여쓰기
 ```
 This is a normal paragraph:
 
@@ -177,7 +194,7 @@ This is a normal paragraph:
 end code block.
 *****
 
-### 2.4.1. 코드블럭
+### 2.5.1. 코드블럭
 코드블럭은 다음과 같이 2가지 방식을 사용할 수 있습니다:
 
 * `<pre><code>{code}</code></pre>` 이용방식
@@ -250,7 +267,7 @@ public class BootSpringBootApplication {
 ```
 
 
-## 2.5. 수평선 ```<hr/>```
+## 2.6. 수평선 ```<hr/>```
 아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 *페이지 나누기* 용도로 많이 사용한다.
 
 ```
@@ -277,7 +294,7 @@ public class BootSpringBootApplication {
 ---------------------------------------
 
 
-## 2.6. 링크
+## 2.7. 링크
 * 참조링크
 
 ```
@@ -313,7 +330,7 @@ Link: [Google](https://google.com, "google link")
 * 외부링크: <http://example.com/>
 * 이메일링크: <address@example.com>
 
-## 2.7. 강조
+## 2.8. 강조
 ```
 *single asterisks*
 _single underscores_
@@ -332,7 +349,7 @@ __double underscores__
 > 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
 
 
-## 2.8. 이미지
+## 2.9. 이미지
 ```
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
@@ -351,21 +368,6 @@ __double underscores__
 <img src="http://cfile6.uf.tistory.com/image/2426E646543C9B4532C7B0" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 <img src="http://cfile6.uf.tistory.com/image/2426E646543C9B4532C7B0" width="40%" height="30%" title="%(비율) 크기 설정" alt="RubberDuck"></img>
 
-## 2.9. 줄바꿈
-3칸 이상 띄어쓰기(` `)를 하면 줄이 바뀐다.
-
-```
-* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 
-이렇게
-
-* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
-이렇게
-```
-
-* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 이렇게
-
-* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.    \
-이렇게
 
 ## 2.10. 표그리기
 
@@ -382,6 +384,11 @@ __double underscores__
 |--|--|--|
 |내용1|내용2|내용3|
 |내용4|내용5|내용6|
+
+| 제목1 | 제목2 | 제목 3 |
+|--|--|--|
+|-내용1|내용2|내용3|
+|-내용4|내용5|내용6|
 
 
 
