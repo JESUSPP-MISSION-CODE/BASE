@@ -1,5 +1,5 @@
-REF : https://gist.github.com/ihoneymon/652be052a0727ad59601
-일부 내용 추가,수정
+REF : https://gist.github.com/ihoneymon/652be052a0727ad59601  
+일부 내용 추가,수정함
 -----
 # 1. 마크다운에 관하여
 ## 1.1. 마크다운이란?
