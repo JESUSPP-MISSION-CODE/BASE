@@ -26,4 +26,4 @@
 <br>
 #### 2. PyCharm 다운로드 및 설치
 [PyCharm download](https://www.jetbrains.com/pycharm/download/?section=windows) 에 접속하여 화면 아래쪽의 Community버전을 다운받아 설치한다.
-<img src="https://github.com/user-attachments/assets/0ed5fc61-56ac-4db9-9ff2-78f8fad22330"  width="800px" height="250px"></img>  
+<img src="https://github.com/user-attachments/assets/0ed5fc61-56ac-4db9-9ff2-78f8fad22330"  width="800px" height="050px"></img>  
