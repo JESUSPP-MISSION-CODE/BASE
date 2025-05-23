@@ -21,6 +21,6 @@
 #### 1. Python설치
 [python.org](https://www.python.org/downloads/) 에 접속하여 3.13.3 버전을 다운받아 설치 한다.
 ![image](https://github.com/user-attachments/assets/bce0984a-a3a3-4afd-a376-53b4b34eb346)
-설치시 Add python.exe to PATH 를 체크하고 설치
-<img src="https://github.com/user-attachments/assets/2155217f-9572-4f39-a6a0-96f2e2163a14" width="600px" height="400px"></img>
+설치시 Add python.exe to PATH 를 체크하고 설치  
+<img src="https://github.com/user-attachments/assets/2155217f-9572-4f39-a6a0-96f2e2163a14" width="550px" height="350px"></img>  
 
