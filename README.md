@@ -30,6 +30,6 @@
 
 #### 3. PyCharm 실행, Git 설치 및 Clone
 PyCharm실행후 Clone Repository선택
-![image](https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124)
+<img src="https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124"  width="700px" height="350px"></img>  
 
 
