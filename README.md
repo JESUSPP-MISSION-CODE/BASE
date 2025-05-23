@@ -29,7 +29,8 @@
 <img src="https://github.com/user-attachments/assets/0ed5fc61-56ac-4db9-9ff2-78f8fad22330"  width="800px" height="200px"></img>  
 
 #### 3. PyCharm 실행, Git 설치 및 Clone
-PyCharm실행후 Clone Repository선택
-<img src="https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124"  width="700px" height="350px"></img>  
-
+PyCharm실행후 Clone Repository선택  
+<img src="https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124"  width="700px" height="400px"></img>  
+<br>
+Clone Repository화면 하단에 Git is not istalled 라고 나오면 download and istall 을 클릭하여 설치  
 
