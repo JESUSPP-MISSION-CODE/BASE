@@ -30,7 +30,10 @@
 
 #### 3. PyCharm 실행, Git 설치 및 Clone
 PyCharm실행후 Clone Repository선택  
-<img src="https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124"  width="650px" height="400px"></img>  
+<img src="https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124"  width="700px" height="400px"></img>  
 <br>
-Clone Repository화면 하단에 Git is not istalled 라고 나오면 download and istall 을 클릭하여 설치  
+Clone Repository화면 하단에 Git is not istalled 라고 나오면 download and istall 을 클릭하여 설치    
+Version Control : Git으로 하고  
+URL에  https://github.com/JESUSPP-MISSION-CODE/BASE  을 입력후 Clone을 클릭  
+![image](https://github.com/user-attachments/assets/a305ed36-f31d-4011-9c53-fbf26f49718b)
 
