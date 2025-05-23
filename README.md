@@ -36,5 +36,5 @@ Clone Repository화면 하단에 Git is not istalled 라고 나오면 download a
 <br>
 Version Control : Git으로 하고  
 URL에  https://github.com/JESUSPP-MISSION-CODE/BASE  을 입력후 Clone을 클릭  
-![image](https://github.com/user-attachments/assets/a305ed36-f31d-4011-9c53-fbf26f49718b)
+<img src="https://github.com/user-attachments/assets/a305ed36-f31d-4011-9c53-fbf26f49718b" width="700px" height="400px"></img>  
 
