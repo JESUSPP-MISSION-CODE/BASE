@@ -27,3 +27,9 @@
 #### 2. PyCharm 다운로드 및 설치
 [PyCharm download](https://www.jetbrains.com/pycharm/download/?section=windows) 에 접속하여 화면 아래쪽의 Community버전을 다운받아 설치한다.
 <img src="https://github.com/user-attachments/assets/0ed5fc61-56ac-4db9-9ff2-78f8fad22330"  width="800px" height="200px"></img>  
+
+#### 3. PyCharm 실행, Git 설치 및 Clone
+PyCharm실행후 Clone Repository선택
+![image](https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124)
+
+
