@@ -25,6 +25,18 @@
 | 6/14(토) |17:30-|오프라인|예정| 미정|    | 환경설정, Jump to python 2 |
 | 6/21(토) |17:30-|오프라인|예정| 미정|    | Jump to python 3 |
 
+### Study 순서
+아래 순서는 대략적으로 생각하는 순서로 진행중 얼마든지 변경될 수 있습니다.   
+같이 해봤으면 하고 요청하시는 내용이 있으시면 언제든 말씀해주세요   
+|Step|Title|
+|--|--|
+|1|[Jump to python](https://wikidocs.net/book/1) |
+|2|[PC GUI 프로그램제작(PyQt5)](https://wikidocs.net/book/2165) |
+|3|[PC제어 자동화(PuAutoGUI)](https://wikidocs.net/85722)|
+|4|[PC제어 자동화(PyWinauto)](https://inpa.tistory.com/entry/pywinauto-%E2%9A%A1-%EC%9C%88%EB%8F%84%EC%9A%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94-%EC%82%AC%EC%9A%A9%EB%B2%95) |
+|5|[Web Page자동화(Selenium)](https://greeksharifa.github.io/references/2020/10/30/python-selenium-usage/)|
+
+
 ### 환경설정
 #### 1. Python 다운로드 설치
 [python.org](https://www.python.org/downloads/) 에 접속하여 3.13.3 버전을 다운받아 설치 한다.
