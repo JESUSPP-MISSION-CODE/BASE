@@ -36,7 +36,7 @@
 같이 해봤으면 하고 요청하시는 내용이 있으시면 언제든 말씀해주세요   
 |Step|Title|
 |--|--|
-|1|[Jump to python](https://wikidocs.net/book/1) : [Youtube강의](https://www.youtube.com/watch?v=ftQZo7XaTOA)|
+|1|[Jump to python](https://wikidocs.net/book/1) : [Youtube강의](https://www.youtube.com/watch?v=ftQZo7XaTOA)<br> 미리 스터디 하시거나, 오프라인모임에 참석하지 못하신 경우 내용은 이 영상으로 followup하시면됩니다.|
 |2|[PC GUI 프로그램제작(PyQt5)](https://wikidocs.net/book/2165) |
 |3|[PC제어 자동화(PuAutoGUI)](https://wikidocs.net/85722)|
 |4|[PC제어 자동화(PyWinauto)](https://inpa.tistory.com/entry/pywinauto-%E2%9A%A1-%EC%9C%88%EB%8F%84%EC%9A%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94-%EC%82%AC%EC%9A%A9%EB%B2%95) |
