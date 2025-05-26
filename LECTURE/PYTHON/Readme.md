@@ -15,13 +15,10 @@ Python 개발 환경으로 가장 많이 쓰이는 프로그램이 Visual Studio
 ![image](https://github.com/user-attachments/assets/129ebde5-5274-4e2c-827d-94951fe9b7c1)
 
 
-#### 3. PyCharm 실행, Git 설치 및 Clone
-PyCharm실행후 Clone Repository선택  
-<img src="https://github.com/user-attachments/assets/fce6f681-4555-4df0-af0b-38441d7a1124"  width="660px" height="400px"></img>  
-<br>
-Clone Repository화면 하단에 Git is not istalled 라고 나오면 download and istall 을 클릭하여 설치  
-<br>
-Version Control : Git으로 하고  
-URL에  https://github.com/JESUSPP-MISSION-CODE/BASE  을 입력후 Clone을 클릭  
-<img src="https://github.com/user-attachments/assets/a305ed36-f31d-4011-9c53-fbf26f49718b" width="660px" height="400px"></img>  
+#### 3. VS Code 실행, Python Extension 설치 
+VS Code 실행후 왼쪽 아래 Extension icon을 클릭 > Python 을 선택하고 install 클릭
+![image](https://github.com/user-attachments/assets/8ef54bb2-8c7e-402e-86c9-8314a58bb976)
+
+
+
 
