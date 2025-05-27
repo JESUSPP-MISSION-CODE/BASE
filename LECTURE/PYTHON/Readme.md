@@ -18,7 +18,9 @@ Python 개발 환경으로 가장 많이 쓰이는 프로그램이 Visual Studio
 #### 3. VS Code 실행, Python Extension 설치 
 VS Code 실행후 왼쪽 아래 Extension icon을 클릭 > Python 을 선택하고 install 클릭
 ![image](https://github.com/user-attachments/assets/8ef54bb2-8c7e-402e-86c9-8314a58bb976)
-
+<br>
+Extension icon을 클릭 > 입력창에 python env을 입력하고 Pythonn Environments install 클릭
+![image](https://github.com/user-attachments/assets/f7e3adbe-9dc7-486c-88ec-e087f4cbf863)
 
 
 
