@@ -30,7 +30,7 @@ Do you trust the authors of the files in this folder?
 화면이 나오면 YES 를 클릭한다.  
 ![image](https://github.com/user-attachments/assets/cdc7fbc2-841c-4c67-a426-3012bf6e8c43)
 <br>  
-EXPLOERE 화면에서 New File을 클릭하고 app.py 라는 파일을 생성한다.
+EXPLOERE 화면에서 New File을 클릭하고 app.py 라는 파일을 생성한다.  
 ![image](https://github.com/user-attachments/assets/7b89baca-327b-454c-84ca-a359548fb09a)
 
 
