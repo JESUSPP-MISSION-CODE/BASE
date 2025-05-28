@@ -41,4 +41,21 @@ python 확장팩 아이콘을 누르고 ENVIRONMENT MANAGERS 를 클릭하고, v
 메뉴 선택에서 Quick Create 를 선택한다.  
 ![image](https://github.com/user-attachments/assets/0828e69e-a452-4169-8461-3e7971ab3739)
 
+#### 6. powershell 관련 에러 발생시 관리자 모드 실행 설정
+app.py 에 아무 code 나 작성하고 실행시 
+```
+& : 이 시스템에서 스크립트를 실행할 수 없으므로 C:\jesuspp\.venv\Scripts\Activate.ps1 파일을 로드할 수 없습니다.
+```
+라고 나오면 powershell의 실행 모드를 설정해 주어야 한다.  
+<br>
+검색에서 powershell을 검색하고 관리자모드로 실행을 한다.
+![image](https://github.com/user-attachments/assets/47dc2d34-7501-4a4e-9fff-6ac70433c92a)
+powershell 화면에 
+```
+Set-ExecutionPolicy RemoteSigned
+```
+라고 입력후 'Y' 를 선택해 준다.
+![image](https://github.com/user-attachments/assets/40b580ab-8d3e-4745-ac91-b45036a6112f)
+
+
 
