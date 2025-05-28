@@ -56,6 +56,13 @@ Set-ExecutionPolicy RemoteSigned
 ```
 라고 입력후 'Y' 를 선택해 준다.
 ![image](https://github.com/user-attachments/assets/40b580ab-8d3e-4745-ac91-b45036a6112f)
+<br>
+파일에 
+```
+print("aaa")
+```
+입력하고 실행 버튼 눌렀을때 아래와 같이 에러 없이 실행되면 환경설정은 다 된 것입니다.
+![image](https://github.com/user-attachments/assets/661e293d-47de-4024-a08b-94b176064c4c)
 
 
 
