@@ -37,5 +37,8 @@ EXPLOERE 화면에서 New File을 클릭하고 app.py 라는 파일을 생성한
 #### 5. venv설정
 python 확장팩 아이콘을 누르고 ENVIRONMENT MANAGERS 를 클릭하고, venv 옆의 '+' 버튼을 누른다.  
 ![image](https://github.com/user-attachments/assets/65f30db7-4ecc-46bd-afe1-a45253cc9bdd)
+<br>
+메뉴 선택에서 Quick Create 를 선택한다.  
+![image](https://github.com/user-attachments/assets/0828e69e-a452-4169-8461-3e7971ab3739)
 
 
