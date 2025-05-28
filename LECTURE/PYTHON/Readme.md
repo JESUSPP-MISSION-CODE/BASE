@@ -22,5 +22,17 @@ VS Code 실행후 왼쪽 아래 Extension icon을 클릭 > Python 을 선택하�
 Extension icon을 클릭 > 입력창에 python env을 입력하고 Pythonn Environments install 클릭
 ![image](https://github.com/user-attachments/assets/f7e3adbe-9dc7-486c-88ec-e087f4cbf863)
 
+#### 4. project 생성
+
+C 드라이브 하위에 jesuspp 라는 폴더를 만든다.  
+VS Code 메뉴에서 File > Open Folder를 선택하고 위에서 생성한 jesuspp 폴더를 선택한다.  
+Do you trust the authors of the files in this folder?  
+화면이 나오면 YES 를 클릭한다.  
+![image](https://github.com/user-attachments/assets/cdc7fbc2-841c-4c67-a426-3012bf6e8c43)
+<br>  
+EXPLOERE 화면에서 New File을 클릭하고 app.py 라는 파일을 생성한다.
+![image](https://github.com/user-attachments/assets/7b89baca-327b-454c-84ca-a359548fb09a)
+
+
 
 
