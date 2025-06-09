@@ -4,18 +4,18 @@
 ```
 github의 repository에 20250610.md 와 같이 날자를파일명으로한 markdown게시물들이 저장되어 있을때, 이 file들을 web bulletin board모양으로 목록으로 보여주고 각 목록을 클릭시 markdown파일을 보여주는 web app을 python 으로 만들어줘
 ```
-ChatGPT의 말:
-다음은 Python으로 작성된 날짜 기반 Markdown 파일을 웹 게시판 형태로 보여주는 웹 앱입니다.
-기능은 다음과 같습니다:
+ChatGPT의 말:  
+다음은 Python으로 작성된 날짜 기반 Markdown 파일을 웹 게시판 형태로 보여주는 웹 앱입니다.  
+기능은 다음과 같습니다:  
 <br>
-./posts/ 폴더에 있는 YYYYMMDD.md 형식의 마크다운 파일을 자동으로 인식.
+./posts/ 폴더에 있는 YYYYMMDD.md 형식의 마크다운 파일을 자동으로 인식.  
 <br>
-웹에서 게시판 형태로 목록 표시.
+웹에서 게시판 형태로 목록 표시.  
 <br>
-클릭 시 해당 마크다운 내용을 HTML로 렌더링하여 표시.
+클릭 시 해당 마크다운 내용을 HTML로 렌더링하여 표시.  
 <br>
 ✅ 주요 구성
-Flask: 웹 서버
+Flask: 웹 서버  
 <br>
 Markdown: Markdown → HTML 변환
 <br>
