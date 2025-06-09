@@ -986,7 +986,8 @@ Windows에서 Gunicorn은 지원되지 않기 때문에, Gunicorn 대신 Waitres
 |Waitress	|WSGI 서버 (Gunicorn 대체)	|Windows|
 |Nginx	|정적 파일 처리, 리버스 프록시	|Windows|
 <br>
-🛠️ 단계별 배포 절차  
+🛠️ 단계별 배포 절차    
+
 1️⃣ 프로젝트 준비  
 
 ```bash
