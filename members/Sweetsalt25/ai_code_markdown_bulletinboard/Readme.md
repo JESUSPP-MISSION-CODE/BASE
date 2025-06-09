@@ -1014,12 +1014,14 @@ import app  # your app.py must contain app = Flask(__name__)
 if __name__ == '__main__':
     serve(app.app, host='127.0.0.1', port=8000)
 ```
+
 실행:
 ```bash
 python serve.py
 ```
 이제 앱이 127.0.0.1:8000 에서 실행됩니다.
 <br>
+
 4️⃣ Nginx 설치 및 설정  
 Nginx Windows 버전 다운로드  
 <br>
@@ -1050,6 +1052,7 @@ http {
 }
 ```
 <br>
+
 Nginx 실행:
 ```bash
 start nginx
