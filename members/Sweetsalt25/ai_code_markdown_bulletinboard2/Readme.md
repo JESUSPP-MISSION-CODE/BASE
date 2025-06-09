@@ -5,7 +5,8 @@ ai_code_markdown_bulletinboard의 과정을 한 번의 prompt로 제작하고 sy
 
 <br>
 
-![image](https://github.com/user-attachments/assets/347b9044-e309-4c05-8b5f-f223265268f7)
+![image](https://github.com/user-attachments/assets/df33b709-fd1e-42d9-af67-b5f0da990f6a)
+
 
 <br>
 
