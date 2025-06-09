@@ -708,7 +708,7 @@ Flask 실행 시 콘솔에 오류 메시지를 캡처해 주세요. 원인을 �
 <br>
 원하시면 전체 프로젝트 구조를 zip 형태로 정리해 드릴 수도 있어요.
 
-
+----
 # STEP5 : 전체 파일 다운로드
 나의 말:
 ```
@@ -728,3 +728,225 @@ python app.py
 ```
 웹 브라우저에서 http://localhost:5000 으로 접속하세요.  
 게시물 작성, 수정, 삭제, 태그/제목 입력 기능이 모두 포함되어 있습니다.   
+
+----
+## STEP6: 일방 사용자에게 배포하기
+
+나의 말:
+```
+local host로 동작시키지 않고 nginx로 서비스 하려면 어떻게 해야할까?
+```
+<br>
+ChatGPT의 말:  
+Flask 앱을 localhost가 아닌 Nginx 웹 서버로 서비스하려면, Flask + Gunicorn + Nginx 조합을 사용합니다.  
+아래는 Ubuntu 서버 기준 전체 절차입니다.  
+<br>
+✅ 구성 개요
+
+```css
+[Nginx] → [Gunicorn] → [Flask App]
+```
+🛠 1. Flask 앱 디렉토리 준비  
+markdown_board/ 디렉토리를 /var/www/markdown_board 등에 복사합니다:  
+```bash
+sudo mkdir -p /var/www/markdown_board
+sudo cp -r ~/Downloads/markdown_board/* /var/www/markdown_board/
+cd /var/www/markdown_board
+```
+🛠 2. 가상환경 & 의존성 설치  
+```bash
+sudo apt update
+sudo apt install python3-venv python3-pip -y
+
+python3 -m venv venv
+source venv/bin/activate
+pip install flask gunicorn markdown
+```
+🛠 3. Gunicorn으로 Flask 앱 실행 테스트  
+```bash
+gunicorn -w 4 -b 127.0.0.1:8000 app:app
+-w 4: 워커 4개
+
+app:app: app.py 안의 Flask(__name__) 인스턴스가 app이어야 함  
+
+브라우저에서 http://127.0.0.1:8000 확인 가능해야 합니다.
+```
+🛠 4. Gunicorn systemd 서비스 등록 (자동 실행용)   
+```bash
+sudo nano /etc/systemd/system/markdown_board.service
+```
+```ini
+[Unit]
+Description=Gunicorn instance for Markdown Board
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/markdown_board
+Environment="PATH=/var/www/markdown_board/venv/bin"
+ExecStart=/var/www/markdown_board/venv/bin/gunicorn -w 4 -b 127.0.0.1:8000 app:app
+
+[Install]
+WantedBy=multi-user.target
+```
+```bash
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable markdown_board
+sudo systemctl start markdown_board
+```
+🛠 5. Nginx 설정  
+```bash
+sudo nano /etc/nginx/sites-available/markdown_board
+```
+```nginx
+server {
+    listen 80;
+    server_name yourdomain.com;  # 또는 서버 IP
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /static/ {
+        alias /var/www/markdown_board/static/;
+    }
+}
+```
+심볼릭 링크 생성:
+```bash
+sudo ln -s /etc/nginx/sites-available/markdown_board /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+```
+🧪 최종 확인  
+브라우저에서 서버 IP 또는 도메인으로 접속:  
+
+```arduino
+http://yourdomain.com
+```
+🔐 (선택) HTTPS 설정 with Let's Encrypt  
+```bash
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d yourdomain.com
+```
+📁 디렉토리 구조 예시
+```swift  
+/var/www/markdown_board/
+│
+├── app.py
+├── posts/
+├── templates/
+├── venv/
+```
+필요하다면 static/ 폴더도 따로 만들어 정적 파일(css/js 등) 관리 가능합니다.  
+<br>
+원하는 운영체제가 다르거나, Docker/Nginx 조합 원하시면 말씀해 주세요.  
+<br>
+나의 말:
+```
+windows 기준으로 설명해줘
+```
+<br>
+ChatGPT의 말:  
+Windows 환경에서 Flask 앱을 Nginx로 서비스하려면 다음 조합을 사용합니다:
+<br>
+🧩 구조: Nginx + Gunicorn (via WSL2) + Flask
+<br>
+🔧 요약  
+구성 요소	설명  
+Nginx	정적 웹 서버 및 리버스 프록시  
+Gunicorn	WSGI 서버 (Flask 실행용) → Linux만 지원됨  
+WSL2	Windows Subsystem for Linux, Ubuntu 환경에서 Gunicorn 실행  
+Flask 앱	당신이 만든 게시판  
+<br>
+📌 Gunicorn은 Windows 직접 실행이 안 됩니다.  
+⇒ WSL2에 설치해서 실행한 뒤 Nginx는 Windows에서 직접 실행하거나 WSL 안에서 실행할 수 있습니다.  
+<br>
+
+🛠️ 단계별 설정 (Windows + WSL2)  
+1️⃣ WSL2 설치 및 Ubuntu 설치  
+Windows 10/11에서 WSL2 활성화:  
+<br>
+
+```powershell
+wsl --install
+```
+설치 후 Ubuntu 실행
+<br>
+2️⃣ WSL2 내 Flask 앱 이동  
+```bash
+cd ~
+mkdir markdown_board
+# markdown_board.zip을 Windows에서 WSL2로 복사하거나 Git clone
+unzip markdown_board.zip
+cd markdown_board
+```
+3️⃣ 가상환경 및 의존성 설치 (WSL2 Ubuntu 내)
+```bash
+sudo apt update
+sudo apt install python3-venv python3-pip nginx -y
+
+python3 -m venv venv
+source venv/bin/activate
+pip install flask gunicorn markdown
+```
+4️⃣ Gunicorn으로 Flask 실행
+```bash
+gunicorn -w 4 -b 127.0.0.1:8000 app:app
+```
+5️⃣ WSL2 내 Nginx 설정
+```bash
+sudo nano /etc/nginx/sites-available/markdown_board
+```
+```nginx
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+```
+```bash
+sudo ln -s /etc/nginx/sites-available/markdown_board /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo service nginx restart
+```
+6️⃣ Windows 브라우저에서 접속  
+브라우저에서 접속:  
+👉 http://localhost  
+<br>
+(WSL2와 Windows는 localhost를 공유합니다)
+<br>
+✅ 대체 방법 (Docker 추천)  
+만약 이 구조가 복잡하다면, Docker를 사용하는 방법도 가능합니다:  
+<br>
+```bash
+# Dockerfile 예시
+FROM python:3.10
+WORKDIR /app
+COPY . .
+RUN pip install flask gunicorn markdown
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "app:app"]
+```
+```bash
+docker build -t flaskboard .
+docker run -p 80:8000 flaskboard
+```
+🔚 정리  
+실행 대상	위치  
+Flask	WSL2 (Ubuntu)  
+Gunicorn	WSL2 (Ubuntu)  
+Nginx	WSL2 또는 Windows (추천: WSL2)  
+웹 브라우저	Windows에서 접속 (localhost)  
+<br>
+원하신다면 이 모든 과정을 Docker Compose로 묶은 예시도 제공드릴 수 있습니다.  
+추가로 Windows에서 직접 Flask + Waitress + Nginx 구성도 가능하니, 원하시는 방식 알려 주세요.  
