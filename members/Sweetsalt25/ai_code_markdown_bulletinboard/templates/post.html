@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ date }} 게시물</title>
+</head>
+<body>
+    <a href="/">← 목록으로</a>
+    <h1>{{ date }}</h1>
+
+    <div>
+        {{ content | safe }}
+    </div>
+
+    <p>
+        <a href="/edit/{{ date }}">✏️ 수정</a> |
+        <a href="/delete/{{ date }}" onclick="return confirm('정말 삭제하시겠습니까?')">🗑️ 삭제</a>
+    </p>
+</body>
+</html>

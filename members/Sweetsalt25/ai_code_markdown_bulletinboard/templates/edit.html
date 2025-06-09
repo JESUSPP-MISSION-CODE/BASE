@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ date }} 수정</title>
+</head>
+<body>
+    <h1>{{ date }} 게시물 수정</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form action="/edit/{{ date }}" method="post">
+        <label>제목:</label><br>
+        <input type="text" name="title" value="{{ title }}" required><br><br>
+
+        <label>태그 (쉼표로 구분):</label><br>
+        <input type="text" name="tags" value="{{ tags }}"><br><br>
+
+        <label>내용:</label><br>
+        <textarea name="content" rows="15" cols="70" required>{{ content }}</textarea><br><br>
+
+        <button type="submit">저장</button>
+    </form>
+    <p><a href="/post/{{ date }}">← 돌아가기</a></p>
+</body>
+</html>

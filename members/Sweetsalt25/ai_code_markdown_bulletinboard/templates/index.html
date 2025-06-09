@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown 게시판</title>
+</head>
+<body>
+    <h1>게시판</h1>
+    <p><a href="/new">➕ 신규 게시물 작성</a></p>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="/post/{{ post.date }}">
+                    <strong>{{ post.title }}</strong>
+                </a>
+                <small>({{ post.date }})</small>
+                {% if post.tags %}
+                    <br><small>🏷 {{ post.tags | join(', ') }}</small>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

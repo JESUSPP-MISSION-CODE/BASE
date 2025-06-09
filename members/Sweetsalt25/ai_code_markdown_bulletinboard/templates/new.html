@@ -1,0 +1,15 @@
+<form action="/new" method="post">
+    <label>날짜 (YYYYMMDD):</label><br>
+    <input type="text" name="date" required pattern="\d{8}"><br><br>
+
+    <label>제목:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>태그 (쉼표로 구분):</label><br>
+    <input type="text" name="tags"><br><br>
+
+    <label>내용 (Markdown 형식):</label><br>
+    <textarea name="content" rows="10" cols="50" required></textarea><br><br>
+
+    <button type="submit">저장</button>
+</form>
