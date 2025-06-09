@@ -1,6 +1,6 @@
 # ChatGPT를 이용한 markdown게시판 작성,관리 프로그램 제작
 ----
-##  STEP1. 시작 promt
+##  STEP1. 시작 prompt
 ```
 github의 repository에 20250610.md 와 같이 날자를파일명으로한 markdown게시물들이 저장되어 있을때, 이 file들을 web bulletin board모양으로 목록으로 보여주고 각 목록을 클릭시 markdown파일을 보여주는 web app을 python 으로 만들어줘
 ```
