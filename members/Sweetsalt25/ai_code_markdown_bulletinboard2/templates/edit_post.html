@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 작성/수정</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        // 페이지 로드 시 자동으로 오늘 날짜를 filename 입력에 넣음
+        window.addEventListener('DOMContentLoaded', () => {
+            const filenameInput = document.getElementById('filename');
+            if (filenameInput && !filenameInput.value) {
+                const today = new Date();
+                const y = today.getFullYear();
+                const m = String(today.getMonth() + 1).padStart(2, '0');
+                const d = String(today.getDate()).padStart(2, '0');
+                filenameInput.value = `${y}${m}${d}`;
+            }
+        });
+    </script>
+</head>
+<body>
+    <h2>게시물 작성/수정</h2>
+    <form method="POST">
+        {% if not filename %}
+        <input id="filename" name="filename" placeholder="파일명 (예: 20250612)" required><br>
+        {% else %}
+        <input name="filename" value="{{ filename }}" readonly><br>
+        {% endif %}
+
+        <input name="title" placeholder="제목" value="{{ title | default('') }}" required><br>
+        <input name="tags" placeholder="태그 (쉼표 구분)" value="{{ tags | default('') }}"><br>
+        <textarea name="content" rows="20" cols="80">{{ content | default('') }}</textarea><br>
+        <button type="submit">저장</button>
+    </form>
+    <a href="{{ url_for('index') }}">← 목록으로</a>
+</body>
+</html>
