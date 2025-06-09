@@ -988,6 +988,7 @@ Windows에서 Gunicorn은 지원되지 않기 때문에, Gunicorn 대신 Waitres
 <br>
 🛠️ 단계별 배포 절차  
 1️⃣ 프로젝트 준비  
+
 ```bash
 C:\markdown_board\
 ├── app.py
