@@ -203,8 +203,22 @@ Apps Script 의 project의 파일 + 버튼을 클릭하고 HTML을 선택한다.
 # 여기까지 하면 App의 개발은 다 끝난것!!!!!!😂
 
 # 6. 배포하기
-Apps Script에서 Deploy > New Deployment 
+Apps Script에서 Deploy > New Deployment   
 ![image](https://github.com/user-attachments/assets/5460afc5-25fe-4f7b-820b-f9764fa84ab4)
+<br>
+
+New Deployment type 에서 설정 아이콘을 클릭하고 "Web App"을 선택한다.    
+설명에 "스마트 여행가이드 앱 V1"   
+인증정보 : 작성자 본인  
+사용자: Google 계정이 있는 사용자 또는 모든사용자   
+로 설정한다.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/941807f8-7d80-474a-996b-0d823a6a45ed)
+<br>
+
+
 
 
 
