@@ -137,7 +137,45 @@ App code작성에 필요한 prompt 를 완성한다.
  
 Claude 답변:
 ```
+해외 여행 가이드 앱을 위한 코드를 작성해드리겠습니다!
+<br>
+code.gs - Google Apps Script 백엔드코드 // Google Apps Script 백엔드 코드 (code.gs)
+<br>
+const GEMINI_API_KEY = 'AIzaSyBaCcNgPOu6P-5ahJ5U-kuuf0UO6UhQp8Y';
+const SPREADSHEET_ID = '1BS8dcR1a-7ciF6Wot0RHd0q849aFaTPhPOYPuyVzU5M';
+const SHEET_NAME = '출력결과';
+<br>
+function doGet() {
+  return HtmlService.creatindex.html - 해외 여행 가이드 앱 UI대화형 아티팩트 완성했습니다! 🎉
+<br>
+코드 설명
+code.gs (백엔드)
+<br>
+Gemini API 연동: 1.5 Flash 모델을 사용하여 여행 추천 생성
+구글 시트 연동: 모든 요청과 결과를 자동으로 기록
+에러 처리: API 호출 실패 시 적절한 오류 메시지 반환
+프롬프트 최적화: 일정별로 구체적인 추천을 받도록 구성
+<br>
+index.html (프론트엔드)
+<br>
+트렌디한 디자인: 그라데이션과 글래스모피즘 효과로 현대적인 느낌
+여름 상큼 테마: 파란색-보라색 그라데이션으로 시원한 느낌
+완전 반응형: 모바일, 태블릿, 데스크톱 모든 기기에 최적화
+부드러운 애니메이션: 폼 요소들이 순차적으로 나타나는 효과
+직관적인 UX: 로딩 스피너, 에러 처리, 결과 표시까지 완벽 구현
+<br>
+설정 방법
+<br>
+Google Apps Script 프로젝트 생성
+code.gs 파일에 백엔드 코드 붙여넣기
+index.html 파일 생성 후 프론트엔드 코드 붙여넣기
+웹 앱으로 배포 (모든 사용자 액세스 허용)
+구글 시트에 "출력결과" 시트가 자동으로 생성됩니다
+<br>
+API 키와 시트 ID는 이미 설정되어 있으니 바로 사용 가능합니다! 혹시 추가 수정이나 기능이 필요하시면 말씀해 주세요! 🚀
 ```
+![image](https://github.com/user-attachments/assets/2f79aa4e-2ffb-4a76-b199-63ee52a82e2f)
+
 
 
 Reference 
