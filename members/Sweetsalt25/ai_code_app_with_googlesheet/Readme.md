@@ -212,7 +212,8 @@ New Deployment type 에서 설정 아이콘을 클릭하고 "Web App"을 선택�
 인증정보 : 작성자 본인  
 사용자: Google 계정이 있는 사용자 또는 모든사용자   
 로 설정한다.
-
+<br>
+😒단! 모든사용자로 할 경우 API사용 한도제한이나 과다 비용이 청구될 수 있다.!!
 <br>
 
 ![image](https://github.com/user-attachments/assets/941807f8-7d80-474a-996b-0d823a6a45ed)
