@@ -313,6 +313,18 @@ formatMarkdownToHTML() 함수: 마크다운을 시각적으로 멋진 HTML로 �
 확인이 다 되었으면 Deploy -> Manage deployment -> 편집 -> 버전명 변경 -> Deploy
 
 ![image](https://github.com/user-attachments/assets/adf65fda-d062-4594-b779-6810d89d5936)
+<br>
+
+# 9. URL 단축 서비스 이용
+
+이렇게 만들어진 App은 접근을 위한 link의 길이가 매우 길어서 사용시나 link 공유가 신경이 쓰이게 되는데, 이 경우 URL 단축서비스를 사용하면 된다.  
+<br>
+
+대표적인 URL 단축서비스는 다음과 같은것이 있다.
+- https://url.kr/ : 무료plan (하루 5000회 click, domain 유지 기간 3년, 로그인 필요 없음)
+- https://bitly.com/ : 무료 plan ( 무제한 click, URL link 관리, Google계정 사용, 무료버전은 광고표시됨 )
+
+
 
 
 
