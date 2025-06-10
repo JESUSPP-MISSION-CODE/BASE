@@ -186,6 +186,24 @@ API 키와 시트 ID는 이미 설정되어 있으니 바로 사용 가능합니
 <br>
 
 ![image](https://github.com/user-attachments/assets/14fbe9a6-7665-4d2a-b039-4f9894b74f44)
+<br>
+
+Apps Script 의 project명을 "스마트 여행가이드 앱 프로젝트" 라고 변경하고, claude의 산출물에서 code.gs 를 클릭하여 우측 상단의 "복사" 를 클릭  
+Apps Script 의 project의 code.gs의 기본 내용은 삭제하고 붙여넣기를 한다. 
+<br>
+![image](https://github.com/user-attachments/assets/22b7927f-282a-4b35-bf68-40d6185c45f3)
+
+Apps Script 의 project의 파일 + 버튼을 클릭하고 HTML을 선택한다.
+![image](https://github.com/user-attachments/assets/4ed76a4e-343d-4cf4-a13d-96576707c24a)
+<br>
+
+파일명은 index 라고 입력하고 엔터를 치면 index.html 파일이 추가된다. 기본 내용은 삭제하고, Claude가 생성한 index.html 내용을 붙여 넣는다.
+![image](https://github.com/user-attachments/assets/351d8267-3e6c-4eb3-ad70-88bdb8ffd497)
+
+# 여기까지 하면 App의 개발은 다 끝난것!!!!!!😂
+
+# 6. 배포하기
+
 
 
 
