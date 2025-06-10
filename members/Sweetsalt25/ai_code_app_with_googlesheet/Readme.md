@@ -2,7 +2,7 @@
 
 주의사항 : 아래 과정을 진행시 Google 계정에 여러개의 계정이 로그인되어 있지 않고 대표계정 하나만 로그인 되어 있어야 합니다.
 <br>
-1. Google AI Studio에서 API key발급받기
+# 1. 🔑Google AI Studio에서 API key발급받기
  https://aistudio.google.com 접속 → Get API Key 클릭 → Create API Key 클릭 → Key가 생성되면 복사해서 적어두기
 <br>
 
@@ -15,12 +15,12 @@
 ![image](https://github.com/user-attachments/assets/22e27195-3d40-4fd6-b901-bd550caa2dda)
 <br>
 
-2. Claude ai 접속하여 로그인 하기
+# 2. 🧭Claude ai 접속하여 로그인 하기
 https://claude.ai/login  에 접속하여 로그인을 한다.
 ![image](https://github.com/user-attachments/assets/9c3b8300-735a-4c75-b14e-03a44dbb60b9)
 <br>
 
-3. Claude Prompt - 앱과 연동할 구글시트 및 화면 인터페이스 구성하기 
+# 3. Claude Prompt - 앱과 연동할 구글시트 및 화면 인터페이스 🪟 구성하기 
 나의 말:
 ```
 자, 너는 지금부터 지상 최고의 구글 Apps Sciprt 웹 앱 개발자다!
@@ -82,7 +82,7 @@ Claude 답변:  답변생성중 무료버전의 응답길이 제한으로 [계�
 
 ![image](https://github.com/user-attachments/assets/7c40a758-f043-4b7e-ba3b-c59f292b84e7)
 
-4. App동작에 사용할 Gemini API model선택 및 App 제작시 필요한 code작성하기
+# 4. 💻App동작에 사용할 Gemini API model선택 및 App 제작시 필요한 code 작성하기
 
 Google Gemini AI model은 다음과 같은 모델이 있다.   
 https://ai.google.dev/gemini-api/docs/models?hl=ko#model-versions
@@ -178,6 +178,15 @@ API 키와 시트 ID는 이미 설정되어 있으니 바로 사용 가능합니
 <br>
 
 두 개의 결과물 파일이 만들어진다. 
+
+# 5. 완성된 code를 Apps Script로 옮기기
+위에서 생성해둔 Googlesheet로 와서 중간의 "확장 프로그램" -> "Apps Script"를 선책한다.
+
+![image](https://github.com/user-attachments/assets/e76150c4-144a-4887-94e5-3777b02337a6)
+<br>
+
+![image](https://github.com/user-attachments/assets/14fbe9a6-7665-4d2a-b039-4f9894b74f44)
+
 
 
 Reference 
