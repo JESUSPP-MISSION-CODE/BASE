@@ -81,6 +81,19 @@ Claude 답변:
 
 ![image](https://github.com/user-attachments/assets/7c40a758-f043-4b7e-ba3b-c59f292b84e7)
 
+4. App동작에 사용할 Gemini API model선택하기
+
+Google Gemini AI model은 다음과 같은 모델이 있다. 
+https://ai.google.dev/gemini-api/docs/models?hl=ko#model-versions
+
+
+| model | |
+|--|--|
+|2.5 Pro|쵀대 응답정확도와  최첨단 성능을 갖춘 가장 강력한 사고모델|
+2.5 Flash|가성비가 가장우수하며 다양한 기능을 제공하는 모델|
+|2.0 Flash|차세대 기능과 향샹된 기능을 갖춘 최신 멀티모달 모델|
+
+
 
 
 Reference 
