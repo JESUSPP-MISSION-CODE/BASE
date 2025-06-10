@@ -246,6 +246,78 @@ Allow 를 클릭해 접근 권한을 승인해 준다.
 Web App의 URL을 복사해서 핸드폰이나 PC에서 아무 브라우저에서 URL에 들어가면 App 이 실행된다
 <br>
 
+# 7. 부분 개선하기
+나의 말:  
+```
+동작은 잘 되는데 응답결과가 markdown으로 출력되고 있어. markdown 형식이 아닌 보기좋은 문서 형식으로 출력하고 싶어. 지금부터 지구 최고의 Google Apps Script 개발자 이자 UI/UX 전문가로서 사용자 친화적이고 보기 좋은 결과를 출력하도록 코드를 수정해줘
+```
+
+Claude 응답:  
+```
+마크다운을 예쁜 HTML 형식으로 변환하여 출력하도록 코드를 수정해드리겠습니다!index.html - 해외 여행 가이드 앱 UI대화형 아티팩트 ∙ 버전 2 index.html - 해외 여행 가이드 앱 UI대화형 아티팩트 ∙ 버전 3 code.gs - Google Apps Script 백엔드코드 ∙ 버전 2 function generatePrompt(formData) {
+  const { destination, people, gender, age, style, days, budget } = formData;
+  
+  return `당신은 전문 여행 가이드입니다. 다음 정보를 바탕으로 상세한 여행 일정을 추천해주세요.
+
+여행 정보:
+- 여행지: ${destination}
+- 인원수: ${people}
+- 성별: ${gender}
+- 나이대: ${agcode.gs - Google Apps Script 백엔드코드 ∙ 버전 3 function generateDayTemplate(days) {
+  let template = '';
+  for (let i = 1; i <= days; i++) {
+    template += `
+📅 **${i}일차**
+- 오전 (09:00-12:00): 구체적인 장소와 활동
+- 점심 (12:00-13:00): 추천 식당과 메뉴
+- 오후 (13:00-17:00): 주요 관광지와 체험 활동
+- 저녁 (17:00-19:00): 석식 장소와 분완벽하게 수정했습니다! 🎨✨
+주요 개선사항
+1. 마크다운 → 아름다운 HTML 변환
+
+formatMarkdownToHTML() 함수: 마크다운을 시각적으로 멋진 HTML로 변환
+구조화된 레이아웃: 각 섹션별로 다른 배경색과 스타일 적용
+이모지 제목: 🌟📍📅💰✈️ 등의 이모지가 포함된 제목들을 예쁘게 스타일링
+
+2. 섹션별 차별화된 디자인
+
+📍 여행 개요: 일반 섹션 스타일
+📅 일차별 계획: 투명한 배경의 카드 형태
+💰 예산 가이드: 빨강-청록 그라데이션 배경
+✈️ 여행 팁: 파랑-보라 그라데이션 배경
+
+3. 인터랙티브 요소
+
+호버 효과: 리스트 항목에 마우스를 올리면 살짝 이동
+글래스모피즘: 반투명 배경과 블러 효과
+그라데이션 테두리: 각 섹션마다 아름다운 테두리 효과
+
+4. 백엔드 프롬프트 개선
+
+더 상세한 템플릿: 시간대별 구체적인 일정 요청
+체계적인 예산 가이드: 항목별 세분화된 비용 정보
+실용적인 팁: 구체적이고 유용한 여행 정보 제공
+
+5. 사용자 경험 최적화
+
+읽기 쉬운 타이포그래피: 적절한 행간과 글꼴 크기
+시각적 계층구조: 제목-부제목-내용의 명확한 구분
+색상 대비: 가독성을 위한 최적화된 색상 조합
+
+이제 마크다운 텍스트가 아닌 아름답고 구조화된 여행 가이드가 출력됩니다! 각 섹션이 시각적으로 구분되고, 호버 효과와 그라데이션으로 더욱 매력적인 결과물을 확인할 수 있습니다. 🚀
+```
+# 8. 수정배포 하기
+새로 생성된 code.gs 과 index.html로 변경하고,   Deploy -> Test Deployment 를 선택한다.  
+생성된 TEST용 URL에 접속해 동작을 확인한다.  
+<br>
+확인이 다 되었으면 Deploy -> Manage deployment -> 편집 -> 버전명 변경 -> Deploy
+
+![image](https://github.com/user-attachments/assets/adf65fda-d062-4594-b779-6810d89d5936)
+
+
+
+
+
 Reference 
 - https://www.youtube.com/watch?v=vCMYu2T5B4c&t=324s
 - https://www.oppadu.com/ai-apps-script-10min/
