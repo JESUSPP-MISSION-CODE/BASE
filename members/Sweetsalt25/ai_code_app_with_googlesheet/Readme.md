@@ -222,17 +222,29 @@ New Deployment type 에서 설정 아이콘을 클릭하고 "Web App"을 선택�
 
 배포를 누르면 Authorize Access 가 나오는데 이것을 클릭하고   
 ![image](https://github.com/user-attachments/assets/7b554ac6-9db1-446e-8066-b56bedc712ca)
+<br>
 
 본인 Google계정을 선택하고  
 ![image](https://github.com/user-attachments/assets/11102fae-ab46-4399-8855-8d43ccf30e50)  
+<br>
 
 Advanced 를 선책하고  
 ![image](https://github.com/user-attachments/assets/294ee91d-7d5a-4c6c-9b24-bfa5e9eaac54)
+<br>
 
 본인이 생성한 App 이름을 클릭하고  
 ![image](https://github.com/user-attachments/assets/abdd9b3d-ba58-463c-8fc4-f7808cf2db2d)
+<br>
 
+Allow 를 클릭해 접근 권한을 승인해 준다.  
+![image](https://github.com/user-attachments/assets/46e035c0-971b-41b8-b3fc-3cb9a8f4b360)
+<br>
 
+그러면 App의 배포가 완료된다.  
+![image](https://github.com/user-attachments/assets/de928eae-b918-4f00-8cea-eaffb1159cb1)
+<br>
+Web App의 URL을 복사해서 핸드폰이나 PC에서 아무 브라우저에서 URL에 들어가면 App 이 실행된다
+<br>
 
 Reference 
 - https://www.youtube.com/watch?v=vCMYu2T5B4c&t=324s
