@@ -203,7 +203,8 @@ Apps Script 의 project의 파일 + 버튼을 클릭하고 HTML을 선택한다.
 # 여기까지 하면 App의 개발은 다 끝난것!!!!!!😂
 
 # 6. 배포하기
-
+Apps Script에서 Deploy > New Deployment 
+![image](https://github.com/user-attachments/assets/5460afc5-25fe-4f7b-820b-f9764fa84ab4)
 
 
 
