@@ -1,4 +1,4 @@
-# AI Coding + Google Sheet 로 10분만에 App만들기
+# AI Coding + Google Sheet 로 10분만에 Web App만들기
 
 주의사항 : 아래 과정을 진행시 Google 계정에 여러개의 계정이 로그인되어 있지 않고 대표계정 하나만 로그인 되어 있어야 합니다.
 <br>
