@@ -77,6 +77,11 @@ Claude 답변:
 
 이런 구조로 하면 사용자 경험도 좋고 데이터 관리도 체계적으로 할 수 있을 것 같습니다!
 ```
+본인의 Google spreadsheet에서 빈 Spreadsheet 를 생성하고 Claude가 추천한 column명을 입력한다. (사용자IP는 제외)  
+
+![image](https://github.com/user-attachments/assets/7c40a758-f043-4b7e-ba3b-c59f292b84e7)
+
+
 
 Reference 
 - https://www.youtube.com/watch?v=vCMYu2T5B4c&t=324s
