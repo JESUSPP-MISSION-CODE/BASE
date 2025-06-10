@@ -211,15 +211,26 @@ New Deployment type 에서 설정 아이콘을 클릭하고 "Web App"을 선택�
 설명에 "스마트 여행가이드 앱 V1"   
 인증정보 : 작성자 본인  
 사용자: Google 계정이 있는 사용자 또는 모든사용자   
-로 설정한다.
+로 설정한다.  
 <br>
-😒단! 모든사용자로 할 경우 API사용 한도제한이나 과다 비용이 청구될 수 있다.!!
 <br>
+😒단! 모든사용자로 할 경우 API사용 한도제한이나 과다 비용이 청구될 수 있다.!!  
+<br>  
 
 ![image](https://github.com/user-attachments/assets/941807f8-7d80-474a-996b-0d823a6a45ed)
 <br>
 
+배포를 누르면 Authorize Access 가 나오는데 이것을 클릭하고   
+![image](https://github.com/user-attachments/assets/7b554ac6-9db1-446e-8066-b56bedc712ca)
 
+본인 Google계정을 선택하고  
+![image](https://github.com/user-attachments/assets/11102fae-ab46-4399-8855-8d43ccf30e50)  
+
+Advanced 를 선책하고  
+![image](https://github.com/user-attachments/assets/294ee91d-7d5a-4c6c-9b24-bfa5e9eaac54)
+
+본인이 생성한 App 이름을 클릭하고  
+![image](https://github.com/user-attachments/assets/abdd9b3d-ba58-463c-8fc4-f7808cf2db2d)
 
 
 
