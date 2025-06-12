@@ -251,7 +251,7 @@ const saveRecommendation = async (travelData) => {
 |--|--|--|
 |Vercel Postgres	|월 60시간	|서버리스 최적화|
 |Supabase	|500MB + 2GB 전송	|실시간 기능 강력|
-|PlanetScale	1개 DB + 1GB|	Git 워크플로우|
+|PlanetScale	|1개 DB + 1GB|	Git 워크플로우|
 |MongoDB Atlas|	512MB	|NoSQL 유연성|
 
 ----
