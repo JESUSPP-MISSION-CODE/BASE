@@ -89,17 +89,18 @@ vercel  # 배포 완료!
  
 어떤 플랫폼이 가장 관심있으신가요? 구체적인 설정 방법도 알려드릴 수 있습니다! 🎯
 
+----
 
-
-
+나의 말 :
+```
 Vercel + Next.js 를 사용하여 구현하면 DB 사용이 필요한 경우는 Vercel + Next.js 만으로 DB기능도 포함하여 구현이 가능한걸까?
+```
 
-편집
 Vercel + Next.js로 DB 기능까지 완전히 구현 가능합니다! 🚀
 
-Vercel에서 지원하는 DB 솔루션들
-1. Vercel Postgres (가장 추천!)
-javascript
+# Vercel에서 지원하는 DB 솔루션들
+## 1. Vercel Postgres (가장 추천!)
+````javascript
 // vercel/postgres 사용 예시
 import { sql } from '@vercel/postgres';
 
@@ -110,30 +111,35 @@ export default async function handler(req, res) {
   `;
   res.json(rows);
 }
-장점:
-
-Vercel 네이티브 통합
-서버리스 환경 최적화
-자동 스케일링
-무료 티어 제공 (월 60시간)
-2. Vercel KV (Redis)
-javascript
+````
+### 장점:
+- Vercel 네이티브 통합
+- 서버리스 환경 최적화
+- 자동 스케일링
+- 무료 티어 제공 (월 60시간)
+  
+## 2. Vercel KV (Redis)
+```javascript
 import { kv } from '@vercel/kv';
 
 // 캐싱이나 세션 관리용
 await kv.set('user:123', userData);
 const user = await kv.get('user:123');
+```
 3. Vercel Blob (파일 저장)
-javascript
+```
+```javascript
 import { put } from '@vercel/blob';
 
 // 이미지나 파일 업로드
 const blob = await put('travel-photo.jpg', file, {
   access: 'public',
 });
-외부 DB 서비스 연동 (더 강력!)
-1. PlanetScale (MySQL)
-javascript
+```
+# 외부 DB 서비스 연동 (더 강력!)
+
+## 1. PlanetScale (MySQL)
+```javascript
 // lib/db.js
 import { connect } from '@planetscale/database';
 
@@ -148,8 +154,9 @@ export async function saveTravelLog(data) {
   );
   return result;
 }
-2. Supabase (PostgreSQL + 실시간 기능)
-javascript
+```
+## 2. Supabase (PostgreSQL + 실시간 기능)
+```javascript
 // lib/supabase.js
 import { createClient } from '@supabase/supabase-js';
 
@@ -165,8 +172,9 @@ export async function saveTravelData(travelData) {
     .insert([travelData]);
   return { data, error };
 }
-3. MongoDB Atlas
-javascript
+```
+## 3. MongoDB Atlas
+```javascript
 // lib/mongodb.js
 import { MongoClient } from 'mongodb';
 
@@ -181,9 +189,11 @@ export async function saveTravelRecommendation(data) {
   });
   return result;
 }
+```
 실제 구현 예시: 여행 앱
 API 라우트 (pages/api/travel.js)
-javascript
+
+```javascript
 import { sql } from '@vercel/postgres';
 
 export default async function handler(req, res) {
@@ -207,8 +217,9 @@ export default async function handler(req, res) {
     }
   }
 }
+```
 프론트엔드에서 사용
-javascript
+```javascript
 // 여행 추천 저장
 const saveRecommendation = async (travelData) => {
   const response = await fetch('/api/travel', {
@@ -218,22 +229,33 @@ const saveRecommendation = async (travelData) => {
   });
   return response.json();
 };
-🏆 추천 DB 조합
-초보자용 (무료 시작)
-Vercel Postgres: 간단한 관계형 데이터
-Vercel KV: 캐싱, 세션 관리
-중급자용 (확장성 고려)
-Supabase: PostgreSQL + 실시간 + 인증
-PlanetScale: MySQL + Git-like 브랜칭
-고급자용 (대용량 처리)
-MongoDB Atlas: NoSQL + 복잡한 데이터
-Firebase: Google 생태계 통합
-비용 비교 (무료 티어 기준)
-서비스	무료 한도	특징
-Vercel Postgres	월 60시간	서버리스 최적화
-Supabase	500MB + 2GB 전송	실시간 기능 강력
-PlanetScale	1개 DB + 1GB	Git 워크플로우
-MongoDB Atlas	512MB	NoSQL 유연성
+```
+----
+
+# 🏆 추천 DB 조합
+## 초보자용 (무료 시작)
+- Vercel Postgres: 간단한 관계형 데이터
+- Vercel KV: 캐싱, 세션 관리
+## 중급자용 (확장성 고려)
+- Supabase: PostgreSQL + 실시간 + 인증
+- PlanetScale: MySQL + Git-like 브랜칭
+## 고급자용 (대용량 처리)
+- MongoDB Atlas: NoSQL + 복잡한 데이터
+- Firebase: Google 생태계 통합
+
+----
+
+## 비용 비교 (무료 티어 기준)
+
+|서비스	|무료 한도	|특징|
+|--|--|--|
+|Vercel Postgres	|월 60시간	|서버리스 최적화|
+|Supabase	|500MB + 2GB 전송	|실시간 기능 강력|
+|PlanetScale	1개 DB + 1GB|	Git 워크플로우|
+|MongoDB Atlas|	512MB	|NoSQL 유연성|
+
+----
+
 결론: Vercel + Next.js만으로도 완전한 풀스택 앱 개발이 가능합니다! DB는 Vercel 네이티브 솔루션이나 외부 서비스 중 선택하면 됩니다. 🎯
 
 어떤 DB 방식으로 시작해보고 싶으신가요?
