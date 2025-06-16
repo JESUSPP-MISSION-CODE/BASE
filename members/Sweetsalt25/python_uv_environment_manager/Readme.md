@@ -56,6 +56,8 @@ Windows
 ```
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
+  ![image](https://github.com/user-attachments/assets/07e2a744-220a-499a-b4bc-4880b0e7f4c4)
+
 PyPI로 설치
 ```
 pip install uv
