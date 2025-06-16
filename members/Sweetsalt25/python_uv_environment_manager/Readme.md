@@ -38,9 +38,36 @@ Anthropic, OpenAI 를 포함한 실제 ML/DS(데이터 사이언스), 백엔드,
 
 ## 2. 주요 특징
 ### 성능(Performance)
+![image](https://github.com/user-attachments/assets/9722b989-465a-4728-beda-62ebbc01e064)
 - Rust 기반 Resolver로 의존성 설치 속도가 pip나 poetry 대비 10~100배 빠르다는 공식 벤치마크가 있습니다.
 - 캐싱과 최적화를 적극 활용하여 대규모 프로젝트에서도 빠른 설치 및 업데이트가 가능합니다.
+- 패키지 설치 및 관리와 패키지 빌드 및 배포까지 모두 가능한 궁극의 파이썬 종속성/패키지/프로젝트 관리 툴이다. 기존에 사용되던 pip, pip-tools, pipx, poetry, pyenv, twine, virtualenv 등의 프로젝트, 패키지 관리 툴들을 모두 대체하는 궁극의 툴.
 <br>
+
+### 설치
+macOS 또는 Linux
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+또는 
+brew install uv
+```
+Windows
+```
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+PyPI로 설치
+```
+pip install uv
+# Or pipx.
+pipx install uv
+```
+설치후 최신 버전 update 
+```
+ uv self update
+```
+
+
 
 ### 사용 편의성(Usability)
 - uv add 등 단순화된 CLI 명령어로 대부분의 작업을 수행할 수 있습니다.
