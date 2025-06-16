@@ -14,6 +14,7 @@
 8. [강조](#28-강조)
 9. [이미지](#29-이미지)
 10. [표그리기](#210-표그리기)
+11. 
 -----
 # 1. 마크다운에 관하여
 ## 1.1. 마크다운이란?
@@ -403,9 +404,36 @@ __double underscores__
 |내용4|내용5|내용6<br>내용7|
 
 
+## 2.11. Mermaid Chart 그려넣기
+https://mermaidchart.com 에 접속하여 Google계정으로 가입하여 -> Create New로 새 chart생성(3개 까지 무료생성)   
+White Board 를 열어서 Template 중에서 가장 가까운 모델을 선택하고 Whiteboard 모드를 끄면 좌측에 mermaid script가 나타난다. 이를 mermaid tag로 감싸서 붙여넣으면 md 파일에 diagram이 생성된다.  
+### Example :
+```mermaid
+flowchart TB
+    A("CO2 cycle") --> B("Photosynthesis")
+    B --> E("Organic carbon") & n3("Decay organism")
+    n1("Sunlight") --> B
+    n3 --> nb("Dead organisms and waste product")
+    nb --> n5("Root respiration") & ng("Fossil fuels")
+    n5 --> nl("Factory emission")
+    nl --> A
+    nn("Animal respiration") --> A
+    n6["Ths is MERMAID Example"]
+    n6@{ shape: text}
+    style A stroke:#000000,fill:#E1F0D4 
+    style B stroke:#000000,fill:#C3EFE0 
+    style E stroke:#000000,fill:#F6ACD8
+    style n3 stroke:#000000,fill:#C2C4B3 
+    style n1 stroke:#000000,fill:#F2F7D2 
+    style nb stroke:#000000,fill:#E9A3B2 
+    style n5 stroke:#000000,fill:#DBCDF8 
+    style ng stroke:#000000,fill:#BEF6AC 
+    style nl stroke:#000000,fill:#A3E9CC 
+    style nn stroke:#000000,fill:#D4EFF0
+```
 
-****
-마크다운은 기본문법만 알고있다면 일반 텍스트편집기에서도 손쉽게 작성이 가능한 마크업언어다. 현재 다양한 도구와 플랫폼에서 지원하고 있기 때문에 더욱 손쉽게 스타일적용된 문서를 작성할 수 있어 점점 널리 사용되고 있다.   
 
-> 마크다운을 이해하고 사용하면서 쉽고 빠르게 스타일문서를 작성해보세요.
+
+
+
 
