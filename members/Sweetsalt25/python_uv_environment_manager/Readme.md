@@ -257,4 +257,20 @@ uvx ruff format *.py --line-length 100
 - 아울러, uv는 오픈소스로 누구나 기여할 수 있고, Astral 팀과 커뮤니티가 긴밀히 협업하고 있습니다.
 아직 도입을 망설이고 계시다면, 작은 프로젝트라도 시도해보시길 권합니다. 처음 세팅부터, 의존성 관리와 배포까지 확실한 편의성을 체감할 수 있을 겁니다.
 
+# 요약
+- windows 설치
+```
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+- 환경생성
+```
+uv init      # pyproject.toml 생성(필요 시)
+```
+- requirements.txt기반 package설치
+```
+uv add -r requirements.txt
+```
+
+  
+
 ### Reference : https://github.com/prrao87/uv-demo
