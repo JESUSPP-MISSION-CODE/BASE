@@ -5,6 +5,8 @@ Anthropic, OpenAI 를 포함한 실제 ML/DS(데이터 사이언스), 백엔드,
 <br>
 
 # Python 패키징이 복잡해진 역사
+![image](https://github.com/user-attachments/assets/0bfb0af6-f270-4ed8-8d4f-a47e54d1edfd)
+
 ## 1. 초기 시절: easy_install
 - 2000년대 후반~2010년대 초반에는 PyPI와 pip 가 지금처럼 성숙하지 않았습니다.  
 - 당시에는 easy_install 이 사실상 유일한 선택지였고, 설치한 패키지를 제거하거나, 설치된 패키지 버전을 지정·고정하는 기능이 부족해 많은 불편이 있었습니다.  
