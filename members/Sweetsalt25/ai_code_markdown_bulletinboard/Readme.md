@@ -1155,8 +1155,8 @@ Claude 답변 :
 - 정적 파일 처리 효율성
 <br>
 
-- Nginx: 이미지/CSS/JS → 직접 서빙 (매우 빠름)
-- Waitress: Python 코드만 처리 → 부하 집중 가능
+  - Nginx: 이미지/CSS/JS → 직접 서빙 (매우 빠름)
+  - Waitress: Python 코드만 처리 → 부하 집중 가능
 <br>
 
 ## 보안 레이어
