@@ -6,7 +6,7 @@ PyInstaller는 Python 스크립트를 독립실행 가능한 실행 파일로 �
 pip install pyinstaller
 ```
 
-##기본 사용법
+## 기본 사용법
 ### 1. 기본 명령어
 ```
 pyinstaller your_script.py
