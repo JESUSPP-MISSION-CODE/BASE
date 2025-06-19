@@ -1244,6 +1244,14 @@ serve(app, host='127.0.0.1', port=8000)  # 외부 직접 접근 차단
 ```
 0.0.0.0으로 바인딩하면 외부에서 Nginx를 우회해서 직접 Waitress에 접근할 수 있어서 덜 안전합니다.
 
+## nginx 의 설정을 변경후 재시작 : Restart / Reload 
+- Restart : 서버를 shutdown한 후 재시직하는 방식 (windows 서비스 종료후 수동으로 nginx 재시작)
+- Reload : 서버를 유지한 채 변경된 설정파일만 적용하는 방식
+
+```
+nginx -s reload 
+```
+
 ----
 
 요약: Python 코드는 전혀 변경할 필요 없고, 단지 네트워크 구성만 바뀝니다!
