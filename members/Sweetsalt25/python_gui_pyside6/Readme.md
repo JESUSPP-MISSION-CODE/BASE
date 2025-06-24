@@ -112,3 +112,7 @@ __init__ 메서드의 마지막 부분에서 모든 시그널과 슬롯의 연�
 - 설정 저장 (closeEvent): closeEvent는 창이 닫히기 직전에 Qt에 의해 자동으로 호출되는 특별한 메서드입니다. 여기서 self.saveGeometry()를 호출하여 현재 창의 크기와 위치 정보를 바이트 배열로 얻고, settings.setValue("geometry", ...)를 통해 "geometry"라는 키로 저장합니다. super().closeEvent(event)를 호출하여 창이 정상적으로 닫히도록 합니다.
 - 설정 불러오기 (_load_settings): settings.value("geometry")로 저장된 값을 불러옵니다. 만약 저장된 값이 있다면(처음 실행하는 게 아니라면) self.restoreGeometry()를 사용하여 창의 상태를 복원합니다.
 - __init__에서 호출: __init__의 마지막에 _load_settings()를 호출하여 창이 화면에 표시되기 전에 크기와 위치를 복원하도록 했습니다.
+ 
+![image](https://github.com/user-attachments/assets/1cb73ddf-97ee-40c7-a003-a547d0ec0ea5)
+
+
