@@ -5,10 +5,10 @@ QGroupBox를 사용하여 관련된 위젯들을 "Basic Interactions"와 "More W
 전체적으로는 QVBoxLayout을, 위젯이 많은 하단부는 QGridLayout을 사용하여 체계적으로 배치했습니다.  
 
 -  다양한 위젯 추가:
-  - QCheckBox: 체크하거나 해제할 수 있는 박스입니다.  
-  - QRadioButton: 그룹 내에서 하나만 선택 가능하며, QHBoxLayout을 이용해 가로로 배치했습니다.  
-  - QComboBox: 여러 항목 중 하나를 선택하는 드롭다운 메뉴입니다.  
-  - QSlider: 마우스로 드래그하여 0부터 100까지의 값을 선택할 수 있는 슬라이더입니다.  
+    - QCheckBox: 체크하거나 해제할 수 있는 박스입니다.  
+    - QRadioButton: 그룹 내에서 하나만 선택 가능하며, QHBoxLayout을 이용해 가로로 배치했습니다.  
+    - QComboBox: 여러 항목 중 하나를 선택하는 드롭다운 메뉴입니다.  
+    - QSlider: 마우스로 드래그하여 0부터 100까지의 값을 선택할 수 있는 슬라이더입니다.  
 
 ## 중앙 상태 라벨: 
 상단에 있는 status_label(QLabel)이 모든 위젯의 현재 상태를 표시하는 역할을 합니다.  
