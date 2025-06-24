@@ -1444,6 +1444,9 @@ class MainWindow(QMainWindow):
         # Drag and drop connection
         self.text_edit.fileDropped.connect(self.load_file)
 
+        # Load window settings at startup
+        self._load_settings()
+
     def _create_actions(self):
         open_icon = self.style().standardIcon(self.style().StandardPixmap.SP_FileIcon)
         self.open_action = QAction(QIcon(open_icon), "&Open...", self)
@@ -1559,6 +1562,19 @@ class MainWindow(QMainWindow):
                 self.statusBar().showMessage(f"Saved to '{file_name}'", 2000)
             except Exception as e:
                 QMessageBox.critical(self, "Error", f"Could not save file: {e}")
+
+    def _load_settings(self):
+        """Loads window size and position from settings."""
+        settings = QSettings("MyCompany", "PySide6 Comprehensive Demo")
+        geometry = settings.value("geometry")
+        if geometry:
+            self.restoreGeometry(geometry)
+
+    def closeEvent(self, event):
+        """Saves window size and position to settings on close."""
+        settings = QSettings("MyCompany", "PySide6 Comprehensive Demo")
+        settings.setValue("geometry", self.saveGeometry())
+        super().closeEvent(event)
 
 
 if __name__ == "__main__":
