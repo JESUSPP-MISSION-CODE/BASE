@@ -104,10 +104,12 @@ __init__ 메서드의 마지막 부분에서 모든 시그널과 슬롯의 연�
 3. closeEvent 메서드 재구현: 사용자가 창을 닫을 때 자동으로 호출되는 closeEvent를 재구현(override)합니다. 이 메서드 안에서 현재 창의 geometry를 설정에 저장합니다.
 4. __init__ 수정: __init__ 메서드 마지막에 _load_settings()를 호출하여 프로그램 시작 시 설정을 불러오도록 합니다.
 <br>
-이 기능은 보이지 않는 곳에서 작동하지만, 애플리케이션의 완성도를 한 단계 높여주는 중요한 부분입니다
+이 기능은 보이지 않는 곳에서 작동하지만, 애플리케이션의 완성도를 한 단계 높여주는 중요한 부분입니다  
 <br>
-이번 업데이트의 핵심 내용은 다음과 같습니다.
+
+이번 업데이트의 핵심 내용은 다음과 같습니다.  
 <br>
+
 - QSettings 객체 생성: QSettings("MyCompany", "PySide6 Comprehensive Demo")와 같이 회사 이름과 앱 이름을 지정하여 설정을 저장하고 불러올 객체를 만듭니다. 이 이름에 따라 설정이 저장되는 위치(레지스트리 또는 .ini 파일)가 결정됩니다.
 - 설정 저장 (closeEvent): closeEvent는 창이 닫히기 직전에 Qt에 의해 자동으로 호출되는 특별한 메서드입니다. 여기서 self.saveGeometry()를 호출하여 현재 창의 크기와 위치 정보를 바이트 배열로 얻고, settings.setValue("geometry", ...)를 통해 "geometry"라는 키로 저장합니다. super().closeEvent(event)를 호출하여 창이 정상적으로 닫히도록 합니다.
 - 설정 불러오기 (_load_settings): settings.value("geometry")로 저장된 값을 불러옵니다. 만약 저장된 값이 있다면(처음 실행하는 게 아니라면) self.restoreGeometry()를 사용하여 창의 상태를 복원합니다.
