@@ -96,3 +96,19 @@ __init__ 메서드의 마지막 부분에서 모든 시그널과 슬롯의 연�
 - 시그널과 슬롯 연결: MainWindow에서 self.text_edit.fileDropped.connect(self.load_file) 코드를 통해 커스텀 위젯의 시그널과 메인 윈도우의 슬롯을 연결하여 두 객체가 소통하도록 만들었습니다.
 
 # QSettings 기능 추가
+ QSettings를 사용하여 애플리케이션의 상태(창 크기 및 위치)를 저장하고 복원하는 기능을 추가하겠습니다. 이 기능을 사용하면 앱을 닫았다가 다시 열었을 때 마지막 창 크기와 위치가 그대로 유지되어 사용자 편의성이 높아집니다.  
+ 
+다음과 같이 코드를 수정하겠습니다.  
+1. QSettings 임포트: QSettings 클래스를 가져옵니다.
+2. _load_settings 메서드 추가: 애플리케이션이 시작될 때 호출될 메서드를 만듭니다. 이 메서드는 저장된 설정에서 창의 geometry(크기와 위치)를 읽어와 복원합니다.
+3. closeEvent 메서드 재구현: 사용자가 창을 닫을 때 자동으로 호출되는 closeEvent를 재구현(override)합니다. 이 메서드 안에서 현재 창의 geometry를 설정에 저장합니다.
+4. __init__ 수정: __init__ 메서드 마지막에 _load_settings()를 호출하여 프로그램 시작 시 설정을 불러오도록 합니다.
+<br>
+이 기능은 보이지 않는 곳에서 작동하지만, 애플리케이션의 완성도를 한 단계 높여주는 중요한 부분입니다
+<br>
+이번 업데이트의 핵심 내용은 다음과 같습니다.
+<br>
+- QSettings 객체 생성: QSettings("MyCompany", "PySide6 Comprehensive Demo")와 같이 회사 이름과 앱 이름을 지정하여 설정을 저장하고 불러올 객체를 만듭니다. 이 이름에 따라 설정이 저장되는 위치(레지스트리 또는 .ini 파일)가 결정됩니다.
+- 설정 저장 (closeEvent): closeEvent는 창이 닫히기 직전에 Qt에 의해 자동으로 호출되는 특별한 메서드입니다. 여기서 self.saveGeometry()를 호출하여 현재 창의 크기와 위치 정보를 바이트 배열로 얻고, settings.setValue("geometry", ...)를 통해 "geometry"라는 키로 저장합니다. super().closeEvent(event)를 호출하여 창이 정상적으로 닫히도록 합니다.
+- 설정 불러오기 (_load_settings): settings.value("geometry")로 저장된 값을 불러옵니다. 만약 저장된 값이 있다면(처음 실행하는 게 아니라면) self.restoreGeometry()를 사용하여 창의 상태를 복원합니다.
+- __init__에서 호출: __init__의 마지막에 _load_settings()를 호출하여 창이 화면에 표시되기 전에 크기와 위치를 복원하도록 했습니다.
