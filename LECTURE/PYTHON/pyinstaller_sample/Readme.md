@@ -1,7 +1,7 @@
 # Pyinstaller
 PyInstaller는 Python 스크립트를 독립실행 가능한 실행 파일로 변환해주는 도구입니다.   
 
-## PyInstaller 설치
+## PyInstaller package 설치
 ```
 pip install pyinstaller
 ```
