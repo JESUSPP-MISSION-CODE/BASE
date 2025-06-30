@@ -29,8 +29,8 @@
 | 5/24(토) |20:00-|온라인|완료 |온라인  | 우준열,오수아,최영인,박사라,김세준,신호철,권태원 |오프라인 모임 토 오후5:30~|
 | 6/07(토) |17:30-|오프라인|완료| 건영1차 421-1105호| 우준열,오수아,최영인,박사라,곽동빈,신호철,권태원   | Jump to python 1 <br> 자료형|
 | 6/14(토) |17:30-|오프라인|완료| ICT B동 110호|오수아,최영인,박사라,곽동빈,권태원    | Jump to python 2 <br> 제어문과 함수|
-| 6/22(일) |20:00-|온라인|예정| 온라인|    | Pyinstaller |
-| 6/28(일) |17:30-|오프라인|예정| ICT B동 110호|    | Jump to python 3 <br> 파일입출력과class  |
+| 6/22(일) |20:00-|온라인|완료| 온라인|오수아,최영인,곽동빈,권태원    | Pyinstaller |
+| 6/28(토) |17:30-|오프라인|완료| ICT B동 110호|우준열,오수아,박사라,곽동빈,권태원    | Jump to python 3 <br> 파일입출력과 class  |
 
 ### Study 순서
 아래 순서는 대략적으로 생각하는 순서로 진행중 얼마든지 변경될 수 있습니다.   
@@ -38,9 +38,7 @@
 |Step|Title|
 |--|--|
 |1|[Jump to python](https://wikidocs.net/book/1) : [Youtube강의](https://www.youtube.com/watch?v=ftQZo7XaTOA)<br> 미리 스터디 하시거나, 오프라인모임에 참석하지 못하신 경우 내용은 이 영상으로 followup하시면됩니다.|
-|2|[PC GUI 프로그램제작(PyQt5)](https://wikidocs.net/book/2165) |
-|3|[PC제어 자동화(PuAutoGUI)](https://wikidocs.net/85722)|
-|4|[PC제어 자동화(PyWinauto)](https://inpa.tistory.com/entry/pywinauto-%E2%9A%A1-%EC%9C%88%EB%8F%84%EC%9A%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94-%EC%82%AC%EC%9A%A9%EB%B2%95) |
-|5|[Web Page자동화(Selenium)](https://greeksharifa.github.io/references/2020/10/30/python-selenium-usage/)|
+|2| Coding with AI - mini project1 / make nc4 file gui app|
+|3| Coding with AI - mini project2 / make web bulletine board|
 
 
