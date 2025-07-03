@@ -12,7 +12,7 @@ Docker를 이용하여 n8n을 설치하는 방법은 먼저 Docker를 설치한 
 2. Local환경에서 n8n 설치  
 로컬 환경에서 n8n을 설치하려면 Node.js와 npm이 필요합니다. 다음은 로컬 환경에서 n8n을 설치하는 방법입니다.  
     1. Node.js 및 npm 설치: Node.js와 npm이 설치되어 있지 않다면, [Node.js 공식 웹사이트](https://nodejs.org/ko)에서 설치 파일을 다운로드하여 설치합니다.
-![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-2.png)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-2.png) 
 ![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-3.png)
     ```
     npm -v [ENTER]
