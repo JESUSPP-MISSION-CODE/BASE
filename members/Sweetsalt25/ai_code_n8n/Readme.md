@@ -1,4 +1,4 @@
-
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-1.png)
 
 
 ## n8n 설치 가이드
