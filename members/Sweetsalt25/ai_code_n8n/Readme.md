@@ -12,8 +12,8 @@ Docker를 이용하여 n8n을 설치하는 방법은 먼저 Docker를 설치한 
 2. Local환경에서 n8n 설치  
 로컬 환경에서 n8n을 설치하려면 Node.js와 npm이 필요합니다. 다음은 로컬 환경에서 n8n을 설치하는 방법입니다.  
     1. Node.js 및 npm 설치: Node.js와 npm이 설치되어 있지 않다면, [Node.js 공식 웹사이트](https://nodejs.org/ko)에서 설치 파일을 다운로드하여 설치합니다.
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/2fc35fff-ffe0-427d-9ecf-7acf7faa3722)
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/d9899ff2-4583-408b-9295-c14d6b7fb51f)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-2.png)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-3.png)
     ```
     npm -v [ENTER]
     > 10.9.2
@@ -81,9 +81,9 @@ Docker를 이용하여 n8n을 설치하는 방법은 먼저 Docker를 설치한 
     ```
     4. n8n 웹 인터페이스 접속: 웹 브라우저를 열고 http://localhost:5678로 접속하여 n8n 웹 인터페이스에 접근합니다.
     5. 관리자 계정 등록  : n8n 웹 인터페이스에 처음 접속하면 관리자 계정을 등록해야 합니다. 관리자 계정을 등록하면 워크플로우를 생성하고 관리할 수 있습니다.  
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/1e160317-7e31-4a76-acd0-1d3d79351bdd)
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/b77abb85-6444-4d92-bec5-1dcd84627c29)
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/6f5fa651-4b19-42cc-ace5-c4bc6a6a9d11)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-4.png)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-5.png)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-6.png)
 <br>
 
 ## n8n 개요와 특징
@@ -123,7 +123,7 @@ Create Workflow 버튼을 클릭하여 새로운 워크플로우를 생성 할 �
 <br>
 
 원하는 템플릿을 선택하여 클릭하면 아래와 같은 워크플로우가 생성됩니다.
-n8n![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/8d19ed11-5100-4982-bf0d-2d527f5a89e8)
+n8n![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-7.png)
 <br>
 
 각 노드는 특정 작업을 수행하며, 노드를 연결하여 원하는 자동화 프로세스를 설계할 수 있습니다. 예를 들어, 이메일을 자동으로 보내거나 데이터를 처리하는 등의 작업을 노드를 통해 구현할 수 있습니다.
@@ -173,7 +173,7 @@ n8n을 통해 업무 자동화를 시작하는 방법을 요약하자면, 먼저
     - Webhook
     - Property update
     - From submission  
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/6c6b270a-e0b1-46a5-9155-956420467144)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-8.png)
 <br>
 
 ##### Filtering : Filtering is used to allow or block certain types of data from following a path based on certain conditions
@@ -198,7 +198,7 @@ Correctly mapping a process before automation will ensure you have visibility on
 <br>
 
 Using a folowchart, list every different part of a process as a block and use arrows to link how these parts interact.
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/346398de-f523-457d-8001-14ebf7cd1236)
+![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-9.png)
 
 
   
