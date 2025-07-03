@@ -1,4 +1,4 @@
-![image](https://github.sec.samsung.net/twkwon/cpp1_scp_ai/assets/39569/0aa4b307-1b76-4918-ae7a-14c3fc7ce8a5)
+
 
 
 ## n8n 설치 가이드
