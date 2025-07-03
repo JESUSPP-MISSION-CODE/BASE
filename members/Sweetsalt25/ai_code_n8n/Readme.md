@@ -202,5 +202,13 @@ Using a folowchart, list every different part of a process as a block and use ar
 
 
   
-  
+# n8n - Kakao talk 전송 node만들기
+1. https://developers.kakao.com/ 에 가입한다.
+2. 화면 상단의 내 애플리케이션  > 애플리케이션 추가하기 클릭 
+   ![image](https://github.com/user-attachments/assets/e860c616-937e-40e1-9e7d-e8c007b821b8)
+   ![image](https://github.com/user-attachments/assets/ad91c870-7e8d-4a7b-92aa-aed466ac6d30)
+   ![image](https://github.com/user-attachments/assets/29caab2f-7549-4585-932a-cf6587ded250)
+
+
+   
 
