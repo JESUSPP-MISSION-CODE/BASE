@@ -441,15 +441,17 @@ SVG 파일은 벡터데이터이미지로 다음과 같이 markdown파일에 첨
 ![설명](파일명.svg)
 ```
 
-- 직접 인라인으로 svg파일을 삽입
+- 직접 인라인으로 svg파일을 삽입 (HTML을 지원하는 마크다운 렌더러에서만 동작함)
 ```
 <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
   <circle cx="50" r="40" stroke="green" stroke-widh="4" fill="yellow" />
 </svg>
 ```
 
+
 <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" r="40" stroke="green" stroke-widh="4" fill="yellow" />
+  <circle cx="50" r="40" stroke="green" stroke-widh="4" fill="yellow"/>
 </svg>
+
 
 
