@@ -440,6 +440,8 @@ SVG 파일은 벡터데이터이미지로 다음과 같이 markdown파일에 첨
 ```
 ![설명](파일명.svg)
 ```
+![이미지](fb.svg)
+
 
 - 직접 인라인으로 svg파일을 삽입 (HTML을 지원하는 마크다운 렌더러에서만 동작함)
 ```
@@ -452,6 +454,9 @@ SVG 파일은 벡터데이터이미지로 다음과 같이 markdown파일에 첨
 <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
   <circle cx="50" r="40" stroke="green" stroke-widh="4" fill="yellow"/>
 </svg>
+
+
+<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#0084ff" d="M512 0H0v512h512z"/><path d="M257 93c-88.918 0-161 67.157-161 150 0 47.205 23.412 89.311 60 116.807V417l54.819-30.273C225.449 390.801 240.948 393 257 393c88.918 0 161-67.157 161-150S345.918 93 257 93zm16 202l-41-44-80 44 88-94 42 44 79-44-88 94z" fill="#ffffff"/></svg>
 
 
 
