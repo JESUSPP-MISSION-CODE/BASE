@@ -15,6 +15,7 @@
 9. [이미지](#29-이미지)
 10. [표그리기](#210-표그리기)
 11. [Mermaid Chart 그려넣기](#211-Mermaid-Chart-그려넣기)
+12. [Mermaid Chart 그려넣기](#211-Mermaid-Chart-그려넣기)
 -----
 # 1. 마크다운에 관하여
 ## 1.1. 마크다운이란?
@@ -432,8 +433,22 @@ flowchart TB
     style nn stroke:#000000,fill:#D4EFF0
 ```
 
+## 2.12. SVG 그려넣기
 
+SVG 파일은 벡터데이터이미지로 다음과 같이 markdown파일에 첨부가 가능합니다.  
+- 이미지와 같은 형식으로 첨부
+```
+![설명](파일명.svg)
+```
 
-
+- 직접 인라인으로 svg파일을 삽입
+```
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" r="40" stroke="green" stroke-widh="4" fill="yellow" />
+</svg>
+```
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" r="40" stroke="green" stroke-widh="4" fill="yellow" />
+</svg>
 
 
