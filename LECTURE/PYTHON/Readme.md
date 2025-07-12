@@ -64,5 +64,14 @@ print("aaa")
 입력하고 실행 버튼 눌렀을때 아래와 같이 에러 없이 실행되면 환경설정은 다 된 것입니다.
 ![image](https://github.com/user-attachments/assets/661e293d-47de-4024-a08b-94b176064c4c)
 
+## VS Code에서 Extention을 설치 했으나 Python Environments Icon이 나타나지 않는경우
+https://github.com/microsoft/vscode-python-environments/issues/584
+VS Code에서 Python Environments Extention을 설치하면 좌측 메뉴에 Python Icon이 나타나야 하는데 나타나지 않는경우 
 
+Ctrl+Shift+P 버튼을 누르고 입력창에 다음 항목을 입력합니다.
+```
+python.useEnvironmentsExtension
+```
 
+아래와 같이 Enable the Python Environments Extension 앞의 check box를 켜줍니다. 
+<img width="1028" height="472" alt="image" src="https://github.com/user-attachments/assets/557bcf68-d4da-4ff9-9029-a73f16461827" />
