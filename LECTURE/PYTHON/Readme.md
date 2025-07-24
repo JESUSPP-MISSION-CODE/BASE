@@ -75,3 +75,13 @@ python.useEnvironmentsExtension
 
 아래와 같이 Enable the Python Environments Extension 앞의 check box를 켜줍니다. 
 <img width="1028" height="472" alt="image" src="https://github.com/user-attachments/assets/557bcf68-d4da-4ff9-9029-a73f16461827" />
+
+## VS Code 를 Update 할 때 마다 지워지는 문제
+VS code update 시 기존설치 파일을 삭제후 재설치가 되지 않아 계속 VS Code가 지워지게되는 현상이 발생할수 있습니다.  
+이 경우   
+1. Ctrl + Shift + P --> Preferences: Open Settings(JSON) 또는 Open User Settings(JSON) 선택  
+2. 자동업데이트 항목을 아래와 같이 해제 후 재시작 (json파일 수정)  
+   "update.mode" : "none",  
+   "extensions.autoUpdate" : false,  
+   "extensions.autoCheckUpdates" : false  
+
