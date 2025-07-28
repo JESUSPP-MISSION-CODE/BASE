@@ -157,7 +157,17 @@ Google의 Firebase 와 가장 큰 차이는 DB가 관계형 DB인가의 차이�
 <br>  
 ## 가장 간단한 supabase web app만들기
 <img width="1106" height="612" alt="image" src="https://github.com/user-attachments/assets/3072473c-c266-4033-b0ac-283ac07a6138" />
-위 와 같이 simple 한 DB를 web에 보여주는 단순한 app을 만들어보자  
+위 와 같이 simple 한 DB를 web에 보여주는 단순한 app을 만들어보자    
+<br> 
+<img width="872" height="433" alt="image" src="https://github.com/user-attachments/assets/a5eb29ea-52a0-4da8-840f-8f480bbbca46" />
+supabase의 기본적인 hierachy구조는 위와 같다.
+supabase homepage에서 login을 하면 기본적은 조직이 하나 생성되어 있고 dashboard가 보이게 된다.   
+<img width="1052" height="427" alt="image" src="https://github.com/user-attachments/assets/30e9f14e-47b2-4b6c-9591-a95cf2dfe418" />
+New project를 클릭하고 새 프로젝트를 생성한다. 이 프로젝트는 조직의 하위에 포함된다.  
+무료 계정에서는 2개의 프로젝트까지 무료로 생성가능하고 1주일간 Action이 없으면 DB는 정지하게 된다.   
+<br> 
+project name은 myfirstsupabase 라고 하자.  
+<img width="845" height="753" alt="image" src="https://github.com/user-attachments/assets/3eccf21a-40a4-4b60-ae67-c3fe23818165" />
 
 
 
