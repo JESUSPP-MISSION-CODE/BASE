@@ -144,9 +144,20 @@ Claude 답변 :
 
 정말 쉽고 간단하게 백앤드 서버를 구축할 수 있고, 비용도 firebase만큼 저렴하여 정말 강추드리는 서비스입니다.  
 물론 백앤드를 공부해야된다면 지양하겠지만, 간단하고 적은 비용, 노력으로 애플리케이션, 또는 웹을 만들고싶다면 이만한게 없다고 생각합니다.  
-기존에 firebase는 nosql이라 여러모로 불편한점이 많았다면, supabase는 pgsql을 기반으로 하여 데이터베이스를 쿼리할 수 있기때문에 관계형 데이터베이스의 특징을 모두 가지고있습니다.  
+기존에 firebase는 nosql이라 여러모로 불편한점이 많았다면, supabase는 pgsql을 기반으로 하여 데이터베이스를 쿼리할 수 있기때문에 관계형 데이터베이스의 특징을 모두 가지고있다.  
 
 ### 🕵 firebase vs supabase 
-firebase와 Supabase는 모두 백엔드 서비스 플랫폼으로, 모바일 및 웹 애플리케이션을 더 빠르고 쉽게 개발할 수 있도록 다양한 기능을 제공합니다.  
+firebase와 Supabase는 모두 백엔드 서비스 플랫폼으로, 모바일 및 웹 애플리케이션을 더 빠르고 쉽게 개발할 수 있도록 다양한 기능을 제공.  
 <br>  
-Firebase와 Supabase는 모두 클라우드 기반의 백엔드 서비스 플랫폼이지만, Firebase는 NoSQL 데이터베이스와 실시간 데이터 동기화 등의 고유한 기능을 제공하고, Supabase는 PostgreSQL 기반의 SQL 데이터베이스 기능과 REST API, 이벤트 처리 등의 고유한 기능을 제공합니다. 선택해야 할 서비스는 프로젝트의 요구 사항과 우선 순위에 따라 달라 질 수 있습니다.  
+Firebase와 Supabase는 모두 클라우드 기반의 백엔드 서비스 플랫폼이지만, Firebase는 NoSQL 데이터베이스와 실시간 데이터 동기화 등의 고유한 기능을 제공하고, Supabase는 PostgreSQL 기반의 SQL 데이터베이스 기능과 REST API, 이벤트 처리 등의 고유한 기능을 제공합니다. 선택해야 할 서비스는 프로젝트의 요구 사항과 우선 순위에 따라 달라 질 수 있다.  
+<br>  
+Supabase는 Database / Storage / Authentification / Edge function (PHP, Django 등) Web application의 backend에 필요한 모든 기능을 지원한다.  
+Google의 Firebase 와 가장 큰 차이는 DB가 관계형 DB인가의 차이라고 보면된다.  
+그러면서도 SQL없이, DB server없이 javascript 만으로 (serverless) 관계형 DB를 사용할수 있는 큰 장점이 있다.  
+<br>  
+## 가장 간단한 supabase web app만들기
+<img width="1106" height="612" alt="image" src="https://github.com/user-attachments/assets/3072473c-c266-4033-b0ac-283ac07a6138" />
+위 와 같이 simple 한 DB를 web에 보여주는 단순한 app을 만들어보자  
+
+
+
