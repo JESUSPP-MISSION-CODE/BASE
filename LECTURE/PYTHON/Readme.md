@@ -72,9 +72,10 @@ Ctrl+Shift+P 버튼을 누르고 입력창에 다음 항목을 입력합니다.
 ```
 python.useEnvironmentsExtension
 ```
+또는 Manage > Settings > User > 에서 env 를 입력 > Extensions - Pytyon 항목 하위에 
 
 아래와 같이 Enable the Python Environments Extension 앞의 check box를 켜줍니다. 
-<img width="1028" height="472" alt="image" src="https://github.com/user-attachments/assets/557bcf68-d4da-4ff9-9029-a73f16461827" />
+<img width="980" height="652" alt="image" src="https://github.com/user-attachments/assets/f2d699de-4e76-4fa8-a838-3ac306cefbe1" />
 
 ## VS Code 를 Update 할 때 마다 지워지는 문제
 VS code update 시 기존설치 파일을 삭제후 재설치가 되지 않아 계속 VS Code가 지워지게되는 현상이 발생할수 있습니다.  
