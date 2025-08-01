@@ -211,6 +211,29 @@ Using a folowchart, list every different part of a process as a block and use ar
   
 An API exposes a service. Developers write programs to consume it.  
 
+### Components of a request
+- URL : unique location for a resource on the web  
+  <img width="674" height="133" alt="image" src="https://github.com/user-attachments/assets/5e7641a6-a81d-4bbe-8c49-02fea3febc31" />
+- Method
+  the 2 most common HTTP methods: GET / POST  pip
+  less common : DELETE / PUT / PATCH  
+- Header : gives more detail context to the request
+  Location / Language / Device type etc.
+- Body (Optional) : only exists for POST requests. It contaons the information to send to the server
+- Creendtials : how we let the application know that we are allowed to make a given request
+  2 main ways to authenticate:
+      - Query parameter : ?api_key=xxx_xxx_xxx
+      - Header: Authorization: Bearer xxx_xxx_xxx
+
+### Components of a response
+- Status Code : 3 digit number
+    - 200 : OK
+    - 401 : Unauthorized
+    - 404 : Not found
+    - 500 : Internal server error
+- Header
+- Body
+
   
 
 
