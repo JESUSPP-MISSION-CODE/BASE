@@ -221,7 +221,7 @@ An API exposes a service. Developers write programs to consume it.
   Location / Language / Device type etc.
 - Body (Optional) : only exists for POST requests. It contaons the information to send to the server
 - Creendtials : how we let the application know that we are allowed to make a given request
-  2 main ways to authenticate:
+  2 main ways to authenticate:  
       - Query parameter : ?api_key=xxx_xxx_xxx
       - Header: Authorization: Bearer xxx_xxx_xxx
 
@@ -231,9 +231,20 @@ An API exposes a service. Developers write programs to consume it.
     - 401 : Unauthorized
     - 404 : Not found
     - 500 : Internal server error
-- Header
-- Body
+- Header : more detail context to the request
+    - content length
+    - content type
+    - Expires
+- Body : actual data returned
+    - HTML
+    - JSON
+    - Data
 
+  ## Webhooks ( API^-1 = reverse API)
+  집에 혼자 친구를 기다리고 있다고 가정하면, 주기적으로 문을 열어보고 친구가 왔는지 확인할 수도 있고, 아니면 벨이 울리기를 기다릴수도 있다. 이렇게 bell이 울리는것을 webhook 이라고 한다.   
+  신용카드 결재 system이 있다고 하자 이 system 이 1초마다 결재요청 들어온거있는지 확인하고 없으면 1초 sleep할수도 있지만 결재 application에 결재요청이 들어오는 것을 webhook로 설정해 두는 것이다.  
+  
+## Chapter3 n8n nodes
   
 
 
