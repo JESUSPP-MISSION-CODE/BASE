@@ -157,13 +157,13 @@ n8n을 사용하다 보면 예상치 못한 문제가 발생할 수 있습니다
 ## 마무리 하며
 n8n을 통해 업무 자동화를 시작하는 방법을 요약하자면, 먼저 n8n을 설치하고 기본 사용법을 익힌 후, 실제 업무에 적용할 수 있는 워크플로우를 설계하는 것입니다. 이를 통해 반복적인 작업을 줄이고, 업무 효율성을 극대화할 수 있습니다.
 
-# n8n Beginner Course
-#### Automation : Definition 
+# n8n Beginner Course (YouTube)
+## Chapter 1 : Automation Definition 
 ```
 "A predictable set of predetermined actions that transfers data from one  point to another"
 ```
-#### Core concepts of automation
-##### Trigger : what starts automation
+## Core concepts of automation
+### Trigger : what starts automation
 - Manual
 - Scheduled
     - Every min
@@ -176,9 +176,9 @@ n8n을 통해 업무 자동화를 시작하는 방법을 요약하자면, 먼저
 ![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-8.png)
 <br>
 
-##### Filtering : Filtering is used to allow or block certain types of data from following a path based on certain conditions
+#### Filtering : Filtering is used to allow or block certain types of data from following a path based on certain conditions
 
-##### Actions (Apps) : Allow you to interact with applications
+#### Actions (Apps) : Allow you to interact with applications
 - Googlesheet
     - Create sheet / Get spreadsheet / Update rows
 - Dropbox
@@ -188,7 +188,9 @@ n8n을 통해 업무 자동화를 시작하는 방법을 요약하자면, 먼저
 - salesforce
     - Get contact / Get company / Create lead
 
-##### Mapping : Mapping is the first step to any good automation
+
+### Automation Best Practice
+#### Mapping : Mapping is the first step to any good automation
 Correctly mapping a process before automation will ensure you have visibility on the:
 - Understanding of the task
 - Tools that will be used
@@ -199,6 +201,17 @@ Correctly mapping a process before automation will ensure you have visibility on
 
 Using a folowchart, list every different part of a process as a block and use arrows to link how these parts interact.
 ![image](https://github.com/JESUSPP-MISSION-CODE/BASE/blob/main/members/Sweetsalt25/ai_code_n8n/image/n8n-9.png)
+
+## Chapter2 : API and WebHooks
+### What is an API?
+어느날 레스토랑에 갔다고 하자. 레스토랑의 서비스가 이루어지는 주방에서는 엄청 많고 복잡한 일이 발생하고 있다. 하지만 고객은 주방을 고려하는 것이 아니라 최종 목적물인 메뉴를 보며 웨이터에게 주문을 한다. 웨이터는 주방에 전달하고 서비스가 완료되면 결과물은 웨이터를 통해 고객에게 전달된다.  
+여기서 웨이터는 interface가 되고, 주방은 application module이 된다.    
+  
+<img width="536" height="176" alt="image" src="https://github.com/user-attachments/assets/fc4bb382-3827-4976-b4dd-d6338f069cb7" />  
+  
+An API exposes a service. Developers write programs to consume it.  
+
+  
 
 
   
