@@ -13,6 +13,7 @@ class SignalViewer(QWidget):
         self.setWindowTitle("Signal Viewer with Live Update & FFT")
         self.resize(1000, 700)
 
+        
         # Layouts
         main_layout = QVBoxLayout(self)
         button_layout = QHBoxLayout()
@@ -56,6 +57,13 @@ class SignalViewer(QWidget):
         self.time_plot.setMouseEnabled(x=True, y=True)
         self.freq_plot.setMouseEnabled(x=True, y=True)
 
+        self.x1 = None
+        self.x2 = None
+        self.line1 = None
+        self.line2 = None
+        self.time_plot.scene().sigMouseClicked.connect(self.handle_mouse_click)
+
+
     def load_file(self):
         fname, _ = QFileDialog.getOpenFileName(
             self, "Open Signal File", "", "Text Files (*.txt)"
@@ -68,10 +76,21 @@ class SignalViewer(QWidget):
             self.curve.setData(self.x_data, self.y_data)
             self.time_plot.enableAutoRange()
 
+    def clear_lines(self):
+        self.x1 = None
+        self.x2 = None
+        if self.line1:
+            self.time_plot.removeItem(self.line1)
+            self.line1 = None
+        if self.line2:
+            self.time_plot.removeItem(self.line2)
+            self.line2 = None
+
     def reset_view(self):
         if self.x_data is not None:
             self.curve.setData(self.x_data, self.y_data)
             self.time_plot.enableAutoRange()
+            self.clear_lines()
 
     def show_fft(self):
         if self.y_data is not None:
@@ -114,6 +133,68 @@ class SignalViewer(QWidget):
         self.y_data = self.y_data[-500:]
 
         self.curve.setData(self.x_data, self.y_data)
+
+    def handle_mouse_click(self, event):
+        mouse_point = self.time_plot.plotItem.vb.mapSceneToView(event.scenePos())
+        x = mouse_point.x()
+
+        if event.button() == Qt.MouseButton.LeftButton:
+            if event.double():
+                # 더블클릭일 경우 확대
+                if self.x1 is not None and self.x2 is not None:
+                    x_min, x_max = sorted([self.x1, self.x2])
+                    if x_min <= x <= x_max:
+                        self.time_plot.setXRange(x_min, x_max, padding=0)
+            else:
+                # 일반 클릭일 경우 수직선 추가
+                if self.x1 is None:
+                    self.x1 = x
+                    if self.line1:
+                        self.time_plot.removeItem(self.line1)
+                    self.line1 = self.create_draggable_line(x, "x1")
+                    self.time_plot.addItem(self.line1)
+                elif self.x2 is None:
+                    self.x2 = x
+                    if self.line2:
+                        self.time_plot.removeItem(self.line2)
+                    self.line2 = self.create_draggable_line(x, "x2")
+                    self.time_plot.addItem(self.line2)
+    
+    def create_draggable_line(self, x, line_id):
+        pen_normal = pg.mkPen('y', width=1)
+        pen_active = pg.mkPen('b', width=4)
+
+        line = pg.InfiniteLine(pos=x, angle=90, pen=pen_normal, movable=True)
+        self.time_plot.addItem(line)
+
+        def on_click():
+            line.setPen(pen_active)
+
+        def on_release():
+            line.setPen(pen_normal)
+            if line_id == "x1":
+                self.x1 = line.value()
+            elif line_id == "x2":
+                self.x2 = line.value()
+
+        line.sigClicked.connect(on_click)
+        line.sigPositionChanged.connect(on_release)
+
+        return line
+
+
+    def mouseDoubleClickEvent(self, event):
+        if self.x1 is not None and self.x2 is not None:
+            x_min, x_max = sorted([self.x1, self.x2])
+            mouse_point = self.time_plot.plotItem.vb.mapSceneToView(event.position())
+            x = mouse_point.x()
+            if x_min <= x <= x_max:
+                self.time_plot.setXRange(x_min, x_max, padding=0)
+                self.clear_lines()
+
+    
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
