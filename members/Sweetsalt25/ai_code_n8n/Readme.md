@@ -235,7 +235,7 @@ An API exposes a service. Developers write programs to consume it.
     - content length
     - content type
     - Expires
-- Body : actual data returned
+- Body : actual data returned. It can be different formats(specified in header)
     - HTML
     - JSON
     - Data
@@ -243,9 +243,20 @@ An API exposes a service. Developers write programs to consume it.
   ## Webhooks ( API^-1 = reverse API)
   집에 혼자 친구를 기다리고 있다고 가정하면, 주기적으로 문을 열어보고 친구가 왔는지 확인할 수도 있고, 아니면 벨이 울리기를 기다릴수도 있다. 이렇게 bell이 울리는것을 webhook 이라고 한다.   
   신용카드 결재 system이 있다고 하자 이 system 이 1초마다 결재요청 들어온거있는지 확인하고 없으면 1초 sleep할수도 있지만 결재 application에 결재요청이 들어오는 것을 webhook로 설정해 두는 것이다.  
-  
+  <img width="520" height="170" alt="image" src="https://github.com/user-attachments/assets/cfd2fa80-fa01-474e-ace1-515c033528af" />
+
 ## Chapter3 n8n nodes
-  
+- The building block(atom) of n8n
+- 3 categories of nodes
+    - Entry point
+    - Function
+    - Exit point
+- Different types of nodes
+  Triggers, Action in app. Data transform, Flow, Files, and Advanced
+<br>  
+Canvas에서 1st Start node를 추가하고 + 버튼으로 Action in an app으로 사용할 app node를 추가하고 각 App마다 Additional actions 를 설정하면 된다.  
+각 node의 상단에는 play 버튼이 있어서 이 버튼으로 해당 node만 실행이 가능하다 
+
 
 
   
