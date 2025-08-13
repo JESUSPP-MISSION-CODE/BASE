@@ -275,8 +275,12 @@ Data Structure
 - List
     - Collection of objects of the same or different type
     - Written between brackets []
-       
-
+    - 어느 형태의 data도 element 가 될수 있으며, json도 element가 될 수 있다.
+ 
+ - JSON의 1 element 는 Table의 1 ROW와 동일하다
+ - n8n node는 inputdata를 item별로( JSON 1 element, List 1 ROW) 처리한다
+   단 Option에서 Execute Once를 설정하면 1개의 item만 처리한다.
+ - node에서 각종 Data처리를 하면서 elemet들과 연결하여 javascript를 사용할수 있다
   
 # n8n - Kakao talk 전송 node만들기
 1. https://developers.kakao.com/ 에 가입한다.
