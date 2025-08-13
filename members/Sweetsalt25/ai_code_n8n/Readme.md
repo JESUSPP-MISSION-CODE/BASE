@@ -260,6 +260,22 @@ Canvas에서 1st Start node를 추가하고 + 버튼으로 Action in an app으�
 ## localhost 환경에서 google credential등록하기
 https://toyourlight.tistory.com/147
 
+## n8n Data
+Data Structure
+- JSON
+    - Format used for digital communication
+    - Written with braces {}
+    - Contain key:value pairs
+    - JSON은 JSON내부의 entry로 포함될수도 있다. 이는 복잡한 계층구조의 data도 표현이 가능하게 한다.
+    - JSON data접근하는 표준방식
+      ```
+      {{$json.first_name}}
+      {{$json.location.country}}  -> 계층구조 json접근
+      ```
+- List
+    - Collection of objects of the same or different type
+    - Written between brackets []
+       
 
   
 # n8n - Kakao talk 전송 node만들기
