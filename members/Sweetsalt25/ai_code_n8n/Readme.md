@@ -257,6 +257,8 @@ An API exposes a service. Developers write programs to consume it.
 Canvas에서 1st Start node를 추가하고 + 버튼으로 Action in an app으로 사용할 app node를 추가하고 각 App마다 Additional actions 를 설정하면 된다.  
 각 node의 상단에는 play 버튼이 있어서 이 버튼으로 해당 node만 실행이 가능하다 
 
+## localhost 환경에서 google credential등록하기
+https://toyourlight.tistory.com/147
 
 
   
