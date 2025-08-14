@@ -281,7 +281,13 @@ Data Structure
  - n8n node는 inputdata를 item별로( JSON 1 element, List 1 ROW) 처리한다
    단 Option에서 Execute Once를 설정하면 1개의 item만 처리한다.
  - node에서 각종 Data처리를 하면서 elemet들과 연결하여 javascript를 사용할수 있다
-  
+
+## Core Workflow Concepts
+<img width="1447" height="808" alt="image" src="https://github.com/user-attachments/assets/83311903-14fa-40cf-9c40-05c8a7c52e61" />
+
+
+
+
 # n8n - Kakao talk 전송 node만들기
 1. https://developers.kakao.com/ 에 가입한다.
 2. 화면 상단의 내 애플리케이션  > 애플리케이션 추가하기 클릭 
