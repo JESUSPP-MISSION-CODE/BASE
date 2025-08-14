@@ -462,20 +462,20 @@ SVG 파일은 벡터데이터이미지로 다음과 같이 markdown파일에 첨
 
 <!-- 반드시 아래에 한 칸 공백을 두어야 합니다. -->
 이것이 게시물 1의 내용입니다.
-</detail>
+</details>
 
 <details>
 <summary> 이것을 게시물 2입니다. </summary>
 
 <!-- 반드시 아래에 한 칸 공백을 두어야 합니다. -->
 이것이 게시물 2의 내용입니다.
-</detail>
+</details>
 
 <details>
 <summary> 다음 게시물 제목 </summary>
 
 <!-- 반드시 아래에 한 칸 공백을 두어야 합니다. -->
 다음 게시물 내용
-</detail>
+</details>
 
 
