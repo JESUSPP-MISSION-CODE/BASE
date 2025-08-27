@@ -139,7 +139,7 @@ Here's how to get help or provide feedback:
 ## Claude Desktop에서 MCP사용하기
 1. claude desktop 설치
 2. nxp 명령으로 mcp server들이 많이 설치되므로 node.js를 설치한다.
-3. claude 개발자 option을 확인 : C:\Users\/[Username/]\AppData\Roaming\Claude\claude_desktop_config.json
+3. claude 개발자 option을 확인 : C:\Users\\[Username\]\AppData\Roaming\Claude\claude_desktop_config.json
 4. mcp home page 에서 claude code를 위한 mcp server설정 부분 확인 : https://modelcontextprotocol.io/quickstart/user#claude-desktop
 ```
    {
