@@ -137,7 +137,8 @@ Here's how to get help or provide feedback:
 * For bug reports, feature requests, and questions related to Claude.app and claude.ai's MCP integration, please see Anthropic's guide on [How to Get Support](https://support.anthropic.com/en/articles/9015913-how-to-get-support)
 
 ## Claude Desktop에서 MCP사용하기
-1. claude desktop 설치
+### Filesystem MCP
+1. claude desktop 설치 > 햄버거메뉴 > 도움말 > 문제해결 > 개발자모드 : 활성화
 2. nxp 명령으로 mcp server들이 많이 설치되므로 node.js를 설치한다.
 3. claude 개발자 option을 확인 : C:\Users\\[Username\]\AppData\Roaming\Claude\claude_desktop_config.json
 4. mcp home page 에서 claude code를 위한 mcp server설정 부분 확인 : https://modelcontextprotocol.io/quickstart/user#claude-desktop
@@ -154,3 +155,8 @@ Here's how to get help or provide feedback:
       ]
     }
   }
+```
+5. claude desktop > 햄버거메뉴 > 파일 > 설정 > 개발자 > 로컬 MCP 서버 > 구성편집 > mcp 서버 구성 추가
+6. claude desktop > 햄버거메뉴 > 파일 > 설정 > 개발자 > 로컬 MCP 서버 > 설치한 server 가 running 이면 정상동작중 임
+
+### Youtube MCP
