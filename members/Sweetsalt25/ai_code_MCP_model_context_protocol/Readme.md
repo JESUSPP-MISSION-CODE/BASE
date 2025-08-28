@@ -133,10 +133,24 @@ Here's how to get help or provide feedback:
 
 * For bug reports and feature requests related to the MCP specification, SDKs, or documentation (open source), please [create a GitHub issue](https://github.com/modelcontextprotocol)
 * For discussions or Q\&A about the MCP specification, use the [specification discussions](https://github.com/modelcontextprotocol/specification/discussions)
-* For discussions or Q\&A about other MCP open source components, use the [organization discussions](https://github.com/orgs/mode가
-        "C:\Users\DK\Desktop"
+* For discussions or Q\&A about other MCP open source components, use the [organization discussions](https://github.com/orgs/modelcontextprotocol/discussions)
+* For bug reports, feature requests, and questions related to Claude.app and claude.ai's MCP integration, please see Anthropic's guide on [How to Get Support](https://support.anthropic.com/en/articles/9015913-how-to-get-support)
+
+## Claude Desktop에서 MCP사용하기
+1. claude desktop 설치
+2. nxp 명령으로 mcp server들이 많이 설치되므로 node.js를 설치한다.
+3. claude 개발자 option을 확인 : C:\Users\\[Username\]\AppData\Roaming\Claude\claude_desktop_config.json
+4. mcp home page 에서 claude code를 위한 mcp server설정 부분 확인 : https://modelcontextprotocol.io/quickstart/user#claude-desktop
+```
+   {
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\username\\Desktop",
+        "C:\\Users\\username\\Downloads"
       ]
     }
   }
-}
-```
