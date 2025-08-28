@@ -160,3 +160,39 @@ Here's how to get help or provide feedback:
 6. claude desktop > 햄버거메뉴 > 파일 > 설정 > 개발자 > 로컬 MCP 서버 > 설치한 server 가 running 이면 정상동작중 임
 
 ### Youtube MCP
+1. youtube mcp 경로 : github.com/adhikasp/mcp-youtube 
+2. 사용시 실행 명령어을 확인해 보면 uvx 를 사용하고 있다. 이는 uv 가상환경을 위한 것으로 python을 사용가능하게 해준다.
+3. uv설치 - powershell 을 관리자 모드로 실행한 후 아래 명령을 입력한다. 
+```
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+4. git 도 다운로드 하여 설치한다.
+5. mcp 서버 설정 추가
+```
+"mcpServers": {
+    "youtube": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/adhikasp/mcp-youtube", "mcp-youtube"]
+    },
+}
+```
+```
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\DK\\Desktop",
+        "C:\\Users\\DK\\Downloads"
+      ]
+    },
+
+    "youtube": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/adhikasp/mcp-youtube", "mcp-youtube"]
+    }
+  }
+}
+```
